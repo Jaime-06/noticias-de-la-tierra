@@ -171,7 +171,7 @@
       },
       "perspectives": [
         {
-          "source_name": "El Salto",
+          "source_name": "infoLibre",
           "bias": "izquierda",
           "headline": "La AEPD multa a VilaWeb con 7.000 euros por informar sobre policías infiltrados",
           "angle": "Denuncia que las multas administrativas se están utilizando como una herramienta de represión para castigar el periodismo de fiscalización sobre el Ministerio del Interior.",
@@ -187,7 +187,7 @@
       ]
     }
   ],
-  "international_reads": [
+  "international_topics": [
     {
       "source_name": "The New Yorker",
       "original_title": "Did the World Just Gain Hundreds of Millions of Alzheimer’s Patients?",

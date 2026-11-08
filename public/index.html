@@ -7,8 +7,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="GroundNews ES" />
   <meta name="theme-color" content="#f7f4ef" />
-  <title>GroundNews ES · Noticias debajo de la tierra</title>
-  <meta name="description" content="Agregador diario de noticias con análisis de cobertura ideológica, puntos ciegos y síntesis editorial estilo Ground News + Kloshletter." />
+  <title>Noticias debajo de la tierra · Diario Progresista &amp; Radar de Medios</title>
+  <meta name="description" content="Síntesis diaria con mirada de izquierdas rigurosa, sin clickbait y con radar comparativo de prensa española e internacional." />
   <link rel="manifest" href="./manifest.json" />
   <link rel="icon" type="image/svg+xml" href="./icon.svg" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
@@ -26,11 +26,11 @@
         <span id="edition-date">Cargando edición...</span>
       </div>
       <div class="utility-center">
-        <span>Edición diaria · España &amp; Internacional</span>
+        <span>Mirada social · Cero clickbait · Radar de bloques</span>
       </div>
       <div class="utility-right">
         <button id="theme-toggle" class="theme-btn" type="button" aria-label="Cambiar modo de color">
-          <span class="theme-icon" id="theme-icon">◐</span>
+          <span class="theme-icon" id="theme-icon">☾</span>
           <span id="theme-label">Modo oscuro</span>
         </button>
       </div>
@@ -38,34 +38,30 @@
 
     <!-- Cabecera Editorial (Masthead) -->
     <header class="masthead">
-      <div class="masthead-kicker">SÍNTESIS EDITORIAL &amp; RADAR DE COBERTURA MEDIÁTICA</div>
+      <div class="masthead-kicker">DIARIO MATINAL DE ANÁLISIS &amp; CONTRASTE MEDIÁTICO</div>
       <h1 class="masthead-title">Noticias debajo de la tierra</h1>
       <p id="edition-subtitle" class="masthead-subtitle">
-        Cinco historias clave del día miradas desde todos los ángulos, sin ruido ni cámaras de eco.
+        Periodismo de izquierdas sin propaganda ni titulares trampa, contrastado con lo que publica toda la prensa.
       </p>
 
-      <!-- Leyenda del espectro mediático -->
+      <!-- Leyenda del espectro mediático (Rojo = Izquierda, Azul = Derecha) -->
       <div class="sources-legend" aria-label="Fuentes analizadas hoy">
         <div class="legend-item">
           <span class="badge-dot dot-left"></span>
-          <span><strong>Izquierda:</strong> El País, elDiario.es, El Salto</span>
+          <span><strong>Izquierda:</strong> El País, elDiario.es, El Salto, Público, infoLibre, The Guardian, Le Monde</span>
         </div>
         <div class="legend-item">
           <span class="badge-dot dot-center"></span>
-          <span><strong>Síntesis / Centro:</strong> Kloshletter</span>
+          <span><strong>Centro / Síntesis:</strong> La Vanguardia, 20minutos, NYT, BBC, Kloshletter</span>
         </div>
         <div class="legend-item">
           <span class="badge-dot dot-right"></span>
-          <span><strong>Derecha:</strong> El Mundo</span>
-        </div>
-        <div class="legend-item">
-          <span class="badge-dot dot-intl"></span>
-          <span><strong>Lectura larga:</strong> The New Yorker</span>
+          <span><strong>Derecha:</strong> El Mundo, ABC, La Razón</span>
         </div>
       </div>
     </header>
 
-    <!-- Introducción estilo Kloshletter -->
+    <!-- Introducción matinal -->
     <section id="briefing-section" class="briefing-card" hidden>
       <div class="briefing-header">
         <span class="briefing-tag">☕ EL PULSO DE LA MAÑANA</span>
@@ -74,40 +70,63 @@
       <p id="daily-briefing-text" class="briefing-text"></p>
     </section>
 
-    <!-- Filtros rápidos -->
-    <nav class="filter-bar" aria-label="Filtrar temas">
-      <div class="filter-group">
-        <button class="filter-chip active" data-filter="all">Todos los temas (5)</button>
-        <button class="filter-chip" data-filter="blindspot">👁️ Solo Puntos Ciegos (Blindspots)</button>
+    <!-- Navegación rápida y filtros -->
+    <nav class="filter-bar" aria-label="Navegación de secciones y filtros">
+      <div class="section-jumps">
+        <a href="#sec-espana" class="jump-link">🇪🇸 España (5)</a>
+        <a href="#sec-internacional" class="jump-link">🌍 Internacional (5)</a>
+        <a href="#sec-hetero" class="jump-link jump-hetero">⚽ Habla con un hetero</a>
       </div>
-      <div class="filter-hint">
-        Haz clic en cada medio para leer el artículo original
+      <div class="filter-group">
+        <button class="filter-chip active" data-filter="all">Todas las noticias</button>
+        <button class="filter-chip" data-filter="blindspot">👁️ Solo Puntos Ciegos</button>
       </div>
     </nav>
 
-    <!-- Contenedor principal de los 5 grandes temas -->
-    <main id="topics-container" class="topics-list" aria-live="polite">
-      <div class="loading-state">Cargando el análisis del día...</div>
-    </main>
-
-    <!-- Sección Internacional: The New Yorker -->
-    <section class="international-section" aria-labelledby="intl-heading">
+    <!-- SECCIÓN 1: 5 GRANDES TEMAS DE ESPAÑA -->
+    <section id="sec-espana" class="news-block">
       <div class="section-divider">
-        <span class="section-kicker">MIRADA INTERNACIONAL · LECTURAS RECOMENDADAS</span>
-        <h2 id="intl-heading" class="section-title">The New Yorker</h2>
-        <p class="section-desc">Crónicas, perfiles y ensayos seleccionados del feed de noticias de <em>The New Yorker</em> para leer con calma.</p>
+        <span class="section-kicker">BLOQUE NACIONAL · 5 GRANDES TEMAS</span>
+        <h2 class="section-title">España hoy</h2>
+        <p class="section-desc">Las cinco historias clave del día con enfoque social y el desglose de cómo las cuenta cada cabecera.</p>
       </div>
-      <div id="international-container" class="intl-grid"></div>
+      <div id="spain-topics-container" class="topics-list" aria-live="polite">
+        <div class="loading-state">Cargando noticias de España...</div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: 5 GRANDES TEMAS INTERNACIONALES -->
+    <section id="sec-internacional" class="news-block section-spaced">
+      <div class="section-divider">
+        <span class="section-kicker">BLOQUE GLOBAL · THE GUARDIAN, NYT, BBC, LE MONDE, THE NEW YORKER</span>
+        <h2 class="section-title">Panorama Internacional</h2>
+        <p class="section-desc">Cinco claves geopolíticas, sociales y culturales fuera de nuestras fronteras.</p>
+      </div>
+      <div id="intl-topics-container" class="topics-list" aria-live="polite">
+        <div class="loading-state">Cargando noticias internacionales...</div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: HABLA CON UN HETERO (Deporte / Fútbol) -->
+    <section id="sec-hetero" class="hetero-section" aria-labelledby="hetero-heading">
+      <div class="hetero-header">
+        <div class="hetero-badge">⚽ KIT DE SUPERVIVENCIA SOCIAL</div>
+        <h2 id="hetero-heading" class="hetero-title">Habla con un hetero</h2>
+        <p id="hetero-intro" class="hetero-subtitle">
+          Lo estrictamente imprescindible sobre el fútbol de ayer (resultados y quién metió los goles) para sobrevivir en la máquina de café o en el ascensor.
+        </p>
+      </div>
+      <div id="sports-container" class="sports-grid"></div>
     </section>
 
     <!-- Pie de página -->
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <strong>Noticias debajo de la tierra</strong> · Generado estáticamente una vez al día con Python + <code>feedparser</code> + <code>gemini-2.5-flash</code>.
+          <strong>Noticias debajo de la tierra</strong> · 18 medios monitorizados a diario vía RSS + <code>gemini-3.8-flash</code>.
         </div>
         <div class="footer-links">
-          <span>Inspirado en <em>Ground News</em> y <em>Kloshletter</em></span>
+          <span>Enfoque progresista riguroso · Rojo = Izquierda · Azul = Derecha</span>
         </div>
       </div>
     </footer>

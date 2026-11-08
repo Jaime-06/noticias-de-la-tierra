@@ -1,7 +1,7 @@
 /**
  * Lógica de interfaz para "Noticias debajo de la tierra"
- * Lee data.json y renderiza los 5 grandes temas de España, barras de sesgo,
- * indicadores de Punto Ciego (Blindspot) y lecturas de The New Yorker.
+ * - 5 noticias de España + 5 Internacionales (con foto, enfoque progresista sin clickbait y radar Rojo=Izq / Azul=Der)
+ * - Sección "Habla con un hetero" (resumen exprés de fútbol: resultados y goleadores)
  */
 
 const state = {
@@ -52,14 +52,14 @@ function initFilterButtons() {
       buttons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       state.filter = btn.getAttribute("data-filter");
-      renderTopics();
+      renderAllSections();
     });
   });
 }
 
-/* --- Carga de public/data.json --- */
+/* --- Carga de ./data.json --- */
 async function loadDailyData() {
-  const container = document.getElementById("topics-container");
+  const spainContainer = document.getElementById("spain-topics-container");
   try {
     const response = await fetch("./data.json", { cache: "no-store" });
     if (!response.ok) {
@@ -68,16 +68,27 @@ async function loadDailyData() {
     const data = await response.json();
     state.data = data;
     renderHeaderAndBriefing(data);
-    renderTopics();
-    renderInternational(data.international_reads || []);
+    renderAllSections();
   } catch (error) {
     console.error("Error cargando data.json:", error);
-    container.innerHTML = `
+    spainContainer.innerHTML = `
       <div class="empty-state">
-        No se pudo cargar <code>data.json</code>. Ejecuta primero <code>python generator.py</code> o sirve la carpeta <code>public/</code> con un servidor local.
+        No se pudo cargar <code>data.json</code>. Ejecuta primero <code>python generator.py</code>.
       </div>
     `;
   }
+}
+
+function renderAllSections() {
+  if (!state.data) return;
+
+  const spainTopics = state.data.spain_topics || state.data.top_topics || [];
+  const intlTopics = state.data.international_topics || [];
+  const sportsData = state.data.habla_con_un_hetero || null;
+
+  renderTopicList("spain-topics-container", spainTopics, "España");
+  renderTopicList("intl-topics-container", intlTopics, "Internacional");
+  renderSportsSection(sportsData);
 }
 
 function renderHeaderAndBriefing(data) {
@@ -109,35 +120,36 @@ function renderHeaderAndBriefing(data) {
   }
 }
 
-/* --- Renderizado de los 5 temas del día --- */
-function renderTopics() {
-  const container = document.getElementById("topics-container");
-  if (!state.data || !Array.isArray(state.data.top_topics)) {
-    return;
-  }
+/* --- Renderizado de listas de temas (España e Internacional) --- */
+function renderTopicList(containerId, topicsArray, label) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
 
-  const topics = state.data.top_topics.filter((t) => {
+  const filtered = topicsArray.filter((t) => {
     if (state.filter === "blindspot") {
       return t.blindspot && t.blindspot.has_blindspot;
     }
     return true;
   });
 
-  if (topics.length === 0) {
+  if (filtered.length === 0) {
     container.innerHTML = `
       <div class="empty-state">
-        No hay temas con Punto Ciego (Blindspot) en la edición de hoy.
+        No hay noticias de ${escapeHTML(label)} con Punto Ciego en esta edición.
       </div>
     `;
     return;
   }
 
-  container.innerHTML = topics.map((topic, idx) => createTopicCardHTML(topic, idx)).join("");
+  container.innerHTML = filtered.map((topic, idx) => createTopicCardHTML(topic, idx)).join("");
 }
 
 function createTopicCardHTML(topic, idx) {
   const cov = topic.coverage || { left: 0, center: 0, right: 0 };
   const bs = topic.blindspot || { has_blindspot: false, ignored_by: "ninguno", explanation: "" };
+  const title = topic.editorial_title || topic.neutral_title || "";
+  const imageUrl = (topic.image_url || "").trim();
+  const hasImage = imageUrl.startsWith("http://") || imageUrl.startsWith("https://");
 
   const blindspotBadge = bs.has_blindspot
     ? `<span class="blindspot-pill" title="${escapeHTML(bs.explanation)}">
@@ -151,6 +163,24 @@ function createTopicCardHTML(topic, idx) {
            <strong>Alerta de Punto Ciego:</strong> ${escapeHTML(bs.explanation)}
          </div>`
       : "";
+
+  const figureHTML = hasImage
+    ? `<figure class="topic-figure">
+         <img
+           class="topic-image"
+           src="${escapeAttribute(imageUrl)}"
+           alt="${escapeAttribute(title)}"
+           loading="lazy"
+           referrerpolicy="no-referrer"
+           onerror="this.closest('.topic-figure').style.display='none'; this.closest('.topic-Editorial-grid').classList.remove('has-image');"
+         />
+         ${
+           topic.image_caption
+             ? `<figcaption class="topic-figcaption">${escapeHTML(topic.image_caption)}</figcaption>`
+             : ""
+         }
+       </figure>`
+    : "";
 
   const perspectivesHTML = (topic.perspectives || [])
     .map(
@@ -180,14 +210,19 @@ function createTopicCardHTML(topic, idx) {
         ${blindspotBadge}
       </div>
 
-      <h2 class="topic-title">${escapeHTML(topic.neutral_title)}</h2>
-      <p class="topic-summary">${escapeHTML(topic.executive_summary)}</p>
+      <div class="topic-Editorial-grid ${hasImage ? "has-image" : ""}">
+        <div class="topic-text-col">
+          <h3 class="topic-title">${escapeHTML(title)}</h3>
+          <p class="topic-summary">${escapeHTML(topic.executive_summary)}</p>
+        </div>
+        ${figureHTML}
+      </div>
 
       ${blindspotBanner}
 
       <div class="coverage-box" aria-label="Distribución de cobertura ideológica">
         <div class="coverage-header">
-          <span>RADAR DE COBERTURA MEDIÁTICA</span>
+          <span>BALANCE DE COBERTURA (ROJO = IZQUIERDA · AZUL = DERECHA)</span>
           <span>${(topic.perspectives || []).length} ${
             (topic.perspectives || []).length === 1 ? "medio" : "medios"
           }</span>
@@ -198,13 +233,13 @@ function createTopicCardHTML(topic, idx) {
           <div class="bar-segment bar-right" style="width: ${Number(cov.right) || 0}%"></div>
         </div>
         <div class="coverage-labels">
-          <span class="cov-label-left">Izquierda ${Number(cov.left) || 0}%</span>
-          <span class="cov-label-center">Centro ${Number(cov.center) || 0}%</span>
-          <span class="cov-label-right">Derecha ${Number(cov.right) || 0}%</span>
+          <span class="cov-label-left">🔴 Izquierda ${Number(cov.left) || 0}%</span>
+          <span class="cov-label-center">⚪ Centro ${Number(cov.center) || 0}%</span>
+          <span class="cov-label-right">🔵 Derecha ${Number(cov.right) || 0}%</span>
         </div>
       </div>
 
-      <div class="perspectives-heading">Cómo lo enfoca cada medio</div>
+      <div class="perspectives-heading">Cómo titula y enfoca cada periódico</div>
       <div class="perspectives-grid">
         ${perspectivesHTML}
       </div>
@@ -212,25 +247,31 @@ function createTopicCardHTML(topic, idx) {
   `;
 }
 
-/* --- Renderizado de The New Yorker --- */
-function renderInternational(reads) {
-  const container = document.getElementById("international-container");
-  if (!reads || reads.length === 0) {
-    container.innerHTML = `<div class="empty-state">Sin lecturas internacionales disponibles hoy.</div>`;
+/* --- Renderizado de "Habla con un hetero" (Deportes / Fútbol) --- */
+function renderSportsSection(sports) {
+  const container = document.getElementById("sports-container");
+  const introEl = document.getElementById("hetero-intro");
+  if (!container) return;
+
+  if (!sports || !Array.isArray(sports.matches_and_news) || sports.matches_and_news.length === 0) {
+    container.innerHTML = `<div class="empty-state">Hoy no hay crónicas futboleras disponibles.</div>`;
     return;
   }
 
-  container.innerHTML = reads
+  if (sports.intro_joke && introEl) {
+    introEl.textContent = sports.intro_joke;
+  }
+
+  container.innerHTML = sports.matches_and_news
     .map(
       (item) => `
-      <a class="intl-card" href="${escapeAttribute(item.url)}" target="_blank" rel="noopener noreferrer">
+      <a class="sports-card" href="${escapeAttribute(item.url)}" target="_blank" rel="noopener noreferrer">
         <div>
-          <span class="intl-reason">${escapeHTML(item.reading_Reason || "The New Yorker")}</span>
-          <h3 class="intl-title-es">${escapeHTML(item.translated_title)}</h3>
-          <div class="intl-title-en">${escapeHTML(item.original_title)}</div>
-          <p class="intl-summary">${escapeHTML(item.summary)}</p>
+          <span class="sports-comp">⚽ ${escapeHTML(item.competition)}</span>
+          <h3 class="sports-headline">${escapeHTML(item.headline)}</h3>
+          <p class="sports-talking-point">${escapeHTML(item.talking_point)}</p>
         </div>
-        <span class="perspective-link">Leer artículo original en The New Yorker ↗</span>
+        <span class="perspective-link">Ver crónica por si te preguntan más ↗</span>
       </a>
     `
     )

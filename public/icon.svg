@@ -5,8 +5,8 @@
   <line x1="88" y1="128" x2="424" y2="128" stroke="#141413" stroke-width="6"/>
   <line x1="88" y1="142" x2="424" y2="142" stroke="#141413" stroke-width="2"/>
   <text x="256" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="185" font-weight="bold" fill="#141413" text-anchor="middle">N</text>
-  <!-- Barra tricolor de cobertura (Izquierda / Centro / Derecha) -->
-  <rect x="88" y="368" width="112" height="28" rx="6" fill="#2b59c3"/>
+  <!-- Barra tricolor España (Rojo = Izquierda / Gris = Centro / Azul = Derecha) -->
+  <rect x="88" y="368" width="112" height="28" rx="6" fill="#c8322b"/>
   <rect x="208" y="368" width="96" height="28" rx="6" fill="#6e6a63"/>
-  <rect x="312" y="368" width="112" height="28" rx="6" fill="#c83e3b"/>
+  <rect x="312" y="368" width="112" height="28" rx="6" fill="#1f5bb8"/>
 </svg>
