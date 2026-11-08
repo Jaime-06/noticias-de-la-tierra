@@ -1,6 +1,6 @@
 {
-  "name": "GroundNews ES · Noticias debajo de la tierra",
-  "short_name": "GroundNews ES",
+  "name": "Noticias de la tierra",
+  "short_name": "Noticias de la tierra",
   "description": "Agregador diario de noticias con análisis de cobertura ideológica, puntos ciegos y síntesis editorial.",
   "start_url": "./index.html",
   "scope": "./",

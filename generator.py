@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generador diario de 'Noticias debajo de la tierra'.
+Generador diario de 'Noticias de la tierra'.
 Extrae RSS con imágenes de prensa española, internacional y deportiva.
 Analiza sesgos, puntos ciegos y redacta con enfoque progresista riguroso (sin clickbait).
 """
@@ -354,7 +354,7 @@ def analyze_with_gemini(rss_data: dict) -> dict:
     client = genai.Client(api_key=api_key)
 
     prompt = f"""
-Eres el director editorial de **"Noticias debajo de la tierra"**, un diario digital matinal en España.
+Eres el director editorial de **"Noticias de la tierra"**, un diario digital matinal en España.
 
 ### LÍNEA EDITORIAL Y TONO:
 - **Enfoque progresista / de izquierdas, pero riguroso, adulto y CERO clickbait**: No buscas una falsa equidistancia aséptica, sino un periodismo con sensibilidad social (atención a vivienda, servicios públicos, condiciones materiales, derechos laborales, emergencia climática y derechos humanos), pero **rechazas la propaganda, el lenguaje panfletario y los titulares sensacionalistas o clickbaiters**.

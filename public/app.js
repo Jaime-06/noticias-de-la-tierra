@@ -1,5 +1,5 @@
 /**
- * Lógica de interfaz para "Noticias debajo de la tierra"
+ * Lógica de interfaz para "Noticias de la tierra"
  * - 5 noticias de España + 5 Internacionales (con foto, enfoque progresista sin clickbait y radar Rojo=Izq / Azul=Der)
  * - Sección "Habla con un hetero" (resumen exprés de fútbol: resultados y goleadores)
  */
