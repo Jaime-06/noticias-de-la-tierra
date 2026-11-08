@@ -1,97 +1,62 @@
 {
-  "generated_at": "2026-11-08T14:17:51.544391+00:00",
+  "generated_at": "2026-11-08T15:03:16.745326+00:00",
   "date_formatted": "08 de November de 2026",
-  "sources_count": 6,
-  "edition_title": "Pulso electoral bajo la sombra de Urda y las derivadas judiciales",
-  "daily_briefing": "Buenos días. Arrancamos este domingo con la mirada puesta en las revelaciones técnicas del trágico siniestro de Urda y en una precampaña del 29-N que sube de decibelios con promesas de blindaje constitucional y tensión por los pactos. Además, te traemos el pulso de las investigaciones de Adif y los puntos ciegos informativos que marcan la jornada.",
-  "top_topics": [
+  "sources_count": 18,
+  "edition_title": "Tensión electoral ante el 29-N, secuelas de Urda y el repliegue republicano tras las urnas en EE. UU.",
+  "daily_briefing": "Buenos días. La precampaña electoral hacia el 29-N acelera convertida en un choque frontal sobre derechos sociales y seguridad de las infraestructuras tras el siniestro de Urda. Mientras, el mapa geopolítico acusa la resaca de las legislativas en Estados Unidos y las tensiones del extremismo político sacuden tanto las plazas europeas como las instituciones latinoamericanas.",
+  "spain_topics": [
     {
       "id": 1,
-      "category": "Sociedad",
-      "neutral_title": "La investigación técnica del accidente de Urda y la crisis en Transportes",
-      "executive_summary": "La investigación sobre el choque ferroviario de Urda avanza entre el análisis de las cajas negras y la crisis de gestión en el ministerio de Transportes tras la dimisión de Óscar Puente y el relevo por Carlos Cuerpo. Mientras los datos del tren Iryo indican intentos fallidos de contacto previo con Atocha y velocidades de impacto de hasta 200 km/h, los expertos reclaman auditorías profundas de seguridad y formación en la red de alta velocidad.",
-      "coverage": {
-        "left": 35,
-        "center": 30,
-        "right": 35
-      },
-      "blindspot": {
-        "has_blindspot": false,
-        "ignored_by": "ninguno",
-        "explanation": ""
-      },
-      "perspectives": [
-        {
-          "source_name": "El Mundo",
-          "bias": "derecha",
-          "headline": "La caja negra del Iryo revela que la maquinista intentó \"reportar a Atocha en 3-4 ocasiones sin contestación\" antes del choque",
-          "angle": "Pone el foco en posibles negligencias en la torre de control y la falta de respuesta ante la advertencia de la maquinista previa al impacto.",
-          "url": "https://www.elmundo.es/economia/2026/11/07/6aef1a7ffdddff8b688b45a0.html"
-        },
-        {
-          "source_name": "Kloshletter",
-          "bias": "centro",
-          "headline": "El AVE de Urda chocó a entre 160 y 200 kilómetros por hora",
-          "angle": "Sintetiza los datos técnicos del siniestro apuntando a una concatenación de protocolos desfasados y sobrecarga de trabajo.",
-          "url": "https://kloshletter.substack.com/p/el-ave-de-urda-choco-a-entre-160"
-        },
-        {
-          "source_name": "El País",
-          "bias": "izquierda",
-          "headline": "Iñaki Barrón: “El ferrocarril tiene mucho que envidiar en seguridad al modo aéreo, sobre todo en entrenamiento”",
-          "angle": "Aborda la vertiente técnica y formativa a través de expertos del Colegio de Ingenieros para exigir mejoras estructurales de seguridad.",
-          "url": "https://elpais.com/espana/2026-11-08/inaki-barron-el-ferrocarril-tiene-mucho-que-envidiar-en-seguridad-al-modo-aereo-sobre-todo-en-entrenamiento.html"
-        }
-      ]
-    },
-    {
-      "id": 2,
       "category": "Política",
-      "neutral_title": "Carrera al 29-N: pensiones, blindaje constitucional y el debate de las alianzas",
-      "executive_summary": "A las puertas de las elecciones del 29-N, Pedro Sánchez reactiva la campaña prometiendo blindar por Constitución las pensiones según el IPC y el aborto para movilizar el voto frente a la derecha. Por su parte, el PP de Feijóo reprocha la gestión gubernamental de las infraestructuras, marca distancias ambiguas respecto a una coalición con Vox tras pactar listas al Senado y sitúa a figuras de perfil duro en sus candidaturas.",
+      "editorial_title": "La pugna electoral hacia el 29-N se polariza en torno al blindaje social frente a los pactos de la derecha",
+      "image_url": "https://imagenes.elpais.com/resizer/v2/ER43EIS2H5CFLC5KPLLF5GAE6I.jpg?auth=42eb27c42ef3f595c0c1e785e4d85b6fbbb7ec4dc485e2f49b3c230378b26f79",
+      "image_caption": "Pedro Sánchez durante su intervención en el mitin socialista en Bilbao. / El País",
+      "executive_summary": "La carrera hacia las urnas intensifica el debate sobre la sostenibilidad del Estado de bienestar. Mientras Pedro Sánchez propone amparar en el texto constitucional la revalorización de las pensiones y el aborto para movilizar el voto frente a la involución, Alberto Núñez Feijóo endurece el tono con reproches a la gestión ferroviaria y deja abierta la puerta a coaliciones de gobierno con Vox, en un contexto de creciente desconfianza institucional.",
       "coverage": {
         "left": 40,
-        "center": 25,
-        "right": 35
+        "center": 35,
+        "right": 25
       },
       "blindspot": {
-        "has_blindspot": false,
-        "ignored_by": "ninguno",
-        "explanation": ""
+        "has_blindspot": true,
+        "ignored_by": "derecha",
+        "explanation": "La prensa conservadora sitúa el foco prioritario en el desgaste del Ejecutivo y la corrupción, orillando el debate sobre la protección de los derechos adquiridos y la subida de pensiones."
       },
       "perspectives": [
         {
           "source_name": "El País",
           "bias": "izquierda",
-          "headline": "Alberto Núñez Feijóo: “Hacer una coalición de Gobierno con Vox no depende de mí”",
-          "angle": "Resalta las contradicciones de Feijóo sobre su dependencia de Abascal y su promesa de derogar leyes sociales de vivienda.",
-          "url": "https://elpais.com/espana/2026-11-08/alberto-nunez-feijoo-hacer-una-coalicion-de-gobierno-con-vox-no-depende-de-mi.html"
+          "headline": "Sánchez se compromete a blindar la revalorización de las pensiones conforme al IPC en la Constitución",
+          "angle": "Destaca la propuesta social del candidato a la reelección para proteger rentas básicas ante posibles recortes de la derecha.",
+          "url": "https://elpais.com/espana/2026-11-08/ultima-hora-de-la-actualidad-politica-en-directo.html"
+        },
+        {
+          "source_name": "La Vanguardia",
+          "bias": "centro",
+          "headline": "Sánchez advierte que si PP y Vox gobiernan se plegarán a Trump: “Estos tragan con todo”",
+          "angle": "Enfoca la contienda en clave geopolítica y soberanista advirtiendo del peligro de subordinación a movimientos ultraconservadores globales.",
+          "url": "https://www.lavanguardia.com/politica/20261108/11679248/sanchez-advierte-pp-vox-gobiernan-plegaran-trump-tragan.html"
         },
         {
           "source_name": "El Mundo",
           "bias": "derecha",
           "headline": "Sánchez promete reformar la Constitución para blindar las pensiones y el aborto y cita al Papa para llamar a las urnas",
-          "angle": "Subraya el tono defensivo de Sánchez usando promesas sociales y citas religiosas para capear el desgaste de gestión.",
+          "angle": "Enmarca las promesas como un intento del candidato socialista de sobreactuar con medidas programáticas para evitar una derrota.",
           "url": "https://www.elmundo.es/pais-vasco/2026/11/08/6af05b28e85eceb9318b457d.html"
-        },
-        {
-          "source_name": "Kloshletter",
-          "bias": "centro",
-          "headline": "PP y Vox pactan sus candidaturas al Senado",
-          "angle": "Resume de manera neutra el cálculo aritmético electoral de los bloques conservadores para maximizar escaños en la Cámara Alta.",
-          "url": "https://kloshletter.substack.com/p/pp-y-vox-pactan-sus-candidaturas"
         }
       ]
     },
     {
-      "id": 3,
-      "category": "Política",
-      "neutral_title": "Caso Koldo y contratos de Adif: entre nuevas pesquisas policiales y acusaciones de 'guerra sucia'",
-      "executive_summary": "La reactivación del caso Koldo con registros ordenados por la UCO en dependencias vinculadas a Adif y al entorno de Ábalos coincide con una intensa pugna informativa sobre la veracidad de los testimonios clave. Mientras las investigaciones judiciales estrechan el cerco sobre contrataciones públicas del ministerio, el bloque progresista denuncia una campaña de intoxicación y acusaciones sin pruebas promovidas por comisionistas penitenciarios para desestabilizar al Ejecutivo.",
+      "id": 2,
+      "category": "Infraestructuras",
+      "editorial_title": "La investigación del accidente de Urda y las deficiencias del transporte centran la exigencia de responsabilidades",
+      "image_url": "https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2026/11/07/17940762357108.jpg",
+      "image_caption": "Labores de retirada e investigación de los trenes siniestrados en Urda. / El Mundo",
+      "executive_summary": "Los datos recuperados de los sistemas técnicos y las declaraciones de peritos tras el accidente ferroviario de Urda apuntan a problemas estructurales de comunicación, sobrecarga y fallos en la seguridad de las vías. Mientras los comités técnicos reclaman una auditoría pública exhaustiva y recursos urgentes, la oposición utiliza la tragedia como munición de desgaste contra los gestores gubernamentales y la empresa pública Adif.",
       "coverage": {
         "left": 35,
-        "center": 30,
-        "right": 35
+        "center": 35,
+        "right": 30
       },
       "blindspot": {
         "has_blindspot": false,
@@ -100,117 +65,386 @@
       },
       "perspectives": [
         {
-          "source_name": "Kloshletter",
+          "source_name": "El País",
+          "bias": "izquierda",
+          "headline": "Iñaki Barrón: “El ferrocarril tiene mucho que envidiar en seguridad al modo aéreo, sobre todo en entrenamiento”",
+          "angle": "Aborda el siniestro desde el análisis técnico reclamando auditorías independientes e inversión en formación laboral del sector.",
+          "url": "https://elpais.com/espana/2026-11-08/inaki-barron-el-ferrocarril-tiene-mucho-que-envidiar-en-seguridad-al-modo-aereo-sobre-todo-en-entrenamiento.html"
+        },
+        {
+          "source_name": "20minutos",
           "bias": "centro",
-          "headline": "La UCO investiga contratos de Adif en una nueva operación del caso Koldo con seis detenidos",
-          "angle": "Informa de forma objetiva sobre las actuaciones policiales bajo secreto de sumario y las nuevas detenciones ordenadas por el juez.",
-          "url": "https://kloshletter.substack.com/p/la-uco-investiga-contratos-de-adif"
+          "headline": "Feijóo pide a Sánchez \"menos mirar a Trump y más a los trenes\" y a los directivos de Adif devolver los bonus que han cobrado",
+          "angle": "Recoge las críticas de la oposición reclamando la revisión palmo a palmo de la red y medidas disciplinarias en la cúpula de Adif.",
+          "url": "https://www.20minutos.es/nacional/feijoo-pide-sanchez-menos-mirar-trump-mas-trenes-directivos-adif-devolver-gratificaciones-han-cobrado_7058678_0.html"
         },
         {
           "source_name": "El Mundo",
           "bias": "derecha",
-          "headline": "Los escándalos que ya acechaban a Cristian Corvillo, el 'fontanero chaquetero', cuando llevaba en el coche a Sánchez",
-          "angle": "Ahonda en el perfil de intermediarios y su proximidad histórica a las estructuras de poder del PSOE para estrechar el cerco sobre el presidente.",
-          "url": "https://www.elmundo.es/cronica/2026/11/08/6aede81d21efa0981a8b458b.html"
+          "headline": "La caja negra del Iryo revela que la maquinista intentó \"reportar a Atocha en 3-4 ocasiones sin contestación\" antes del choque",
+          "angle": "Subraya los fallos en la torre de control y la cadena de mando operativa previa a la colisión para evidenciar negligencia administrativa.",
+          "url": "https://www.elmundo.es/economia/2026/11/07/6aef1a7ffdddff8b688b45a0.html"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Vivienda",
+      "editorial_title": "La crisis habitacional divide las recetas electorales entre la intervención fiscal y la desregulación",
+      "image_url": "https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2026/11/08/6af076b980e676-11032517.jpeg",
+      "image_caption": "Gabriel Rufián en rueda de prensa sobre las medidas de vivienda. / 20minutos",
+      "executive_summary": "El encarecimiento desmedido del alquiler y la falta de parque residencial accesible se consolidan como la principal fractura social del país. La izquierda política exige topar precios e imponer recargos impositivos a grandes tenedores y especuladores, mientras el Partido Popular promete tumbar las limitaciones regulatorias y confiar la solución a la oferta privada de un millón de viviendas.",
+      "coverage": {
+        "left": 45,
+        "center": 40,
+        "right": 15
+      },
+      "blindspot": {
+        "has_blindspot": true,
+        "ignored_by": "derecha",
+        "explanation": "Los grandes diarios conservadores relegan el debate sobre los precios del alquiler y la especulación inmobiliaria para priorizar las disputas partidistas de campaña."
+      },
+      "perspectives": [
+        {
+          "source_name": "20minutos",
+          "bias": "centro",
+          "headline": "Rufián aboga por \"intervenir de una vez por todas\" el mercado de la vivienda y \"freír a impuestos a los acumuladores\"",
+          "angle": "Detalla las propuestas de fiscalidad punitiva y regulación de precios para combatir la acumulación especulativa.",
+          "url": "https://www.20minutos.es/nacional/rufian-aboga-por-intervenir-una-vez-por-todas-mercado-vivienda-freir-impuestos-los-acumuladores_7058680_0.html"
         },
         {
-          "source_name": "elDiario.es",
+          "source_name": "El País",
           "bias": "izquierda",
-          "headline": "Dos años de mentiras pagadas a precio de oro para tumbar un Gobierno",
-          "angle": "Enmarca la causa judicial en una estrategia de lawfare financiada por sectores mediáticos conservadores mediante testimonios interesados de investigados.",
-          "url": "https://www.eldiario.es/politica/anos-mentiras-pagadas-precio-oro-tumbar-gobierno_129_13645051.html"
+          "headline": "Alberto Núñez Feijóo: “Confirma que derogará los decretos de vivienda”",
+          "angle": "Expone las intenciones de la derecha de desmontar el actual marco regulatorio del alquiler en favor de incentivos al mercado.",
+          "url": "https://elpais.com/espana/2026-11-08/alberto-nunez-feijoo-hacer-una-coalicion-de-gobierno-con-vox-no-depende-de-mi.html"
+        },
+        {
+          "source_name": "infoLibre",
+          "bias": "izquierda",
+          "headline": "Pensiones, autónomos y reforma laboral: Vox tira de derogaciones y el PP de recortar la fiscalidad",
+          "angle": "Analiza las contradicciones y el impacto que tendrían las recetas desreguladoras y de recorte fiscal sobre el gasto social.",
+          "url": "https://www.infolibre.es/economia-y-sociedad/pensiones-autonomos-reforma-laboral-vox-tira-derogaciones-pp-recortar-fiscalidad_1_2239585.html"
         }
       ]
     },
     {
       "id": 4,
-      "category": "Internacional",
-      "neutral_title": "Atentado de extrema derecha con nueve muertos en Cracovia conmociona a Europa",
-      "executive_summary": "Un ataque armado perpetrado en la céntrica plaza del mercado de Cracovia por un hombre vinculado a ideologías de extrema derecha ha provocado al menos nueve muertos y una quincena de heridos. Las autoridades polacas y europeas investigan el suceso como atentado terrorista tras descubrirse además los cuerpos sin vida de los familiares del agresor en su domicilio, reavivando la alarma comunitaria ante la radicalización ultra violenta.",
+      "category": "Derechos",
+      "editorial_title": "Libertad con cargos para diez detenidos del grupo ultra Núcleo Nacional acusados de odio y tenencia de armas",
+      "image_url": "https://static.eldiario.es/clip/68ccd151-e64c-4f04-b20a-af7387e559b1_16-9-discover-aspect-ratio_default_0.jpg",
+      "image_caption": "Operativo judicial y policial sobre la organización Núcleo Nacional. / elDiario.es",
+      "executive_summary": "La instrucción judicial contra catorce integrantes de la organización de extrema derecha Núcleo Nacional culmina provisionalmente con medidas cautelares y retirada de pasaporte para diez de ellos. El caso reabre el debate sobre la respuesta policial e institucional frente a redes organizadas que operan con armas y discursos de odio en entornos juveniles vulnerables a la radicalización.",
       "coverage": {
-        "left": 50,
-        "center": 0,
-        "right": 50
+        "left": 70,
+        "center": 20,
+        "right": 10
       },
       "blindspot": {
         "has_blindspot": true,
-        "ignored_by": "centro",
-        "explanation": "La masacre terrorista en Polonia ha tenido eco en la prensa política de izquierda y derecha, pero ha quedado fuera de los principales boletines matinales de síntesis generalista centrados en la agenda doméstica."
+        "ignored_by": "derecha",
+        "explanation": "Los medios de la derecha mediática omiten la resolución judicial sobre esta red armada de ultraderecha, concentrando sus páginas de sucesos e interior en la criminalidad común."
       },
       "perspectives": [
         {
           "source_name": "elDiario.es",
           "bias": "izquierda",
-          "headline": "Un ultraderechista asesina a nueve personas y deja 15 heridos en un ataque terrorista en Cracovia",
-          "angle": "Enfoca el suceso subrayando el perfil ideológico del atacante y el riesgo del auge de la violencia extremista armada en Europa.",
-          "url": "https://www.eldiario.es/internacional/cinco-muertos-docena-heridos-tiroteo-ciudad-polaca-cracovia_1_13646897.html"
+          "headline": "La jueza deja en libertad con cargos a diez de los 14 ultras de Núcleo Nacional detenidos y les retira el pasaporte",
+          "angle": "Pone el foco en la gravedad de los presuntos delitos de asociación ilícita, odio y tenencia de armas atribuidos a los cabecillas.",
+          "url": "https://www.eldiario.es/politica/jueza-deja-libertad-cargos-diez-14-ultras-nucleo-nacional-detenidos-les-retira-pasaporte_1_13648010.html"
+        },
+        {
+          "source_name": "El Salto",
+          "bias": "izquierda",
+          "headline": "¿Quién decide lo que se puede decir en voz alta?",
+          "angle": "Enmarca el auge ultra en los mecanismos culturales y discursivos que han legitimado planteamientos reaccionarios.",
+          "url": "https://www.elsaltodiario.com/el-rumor-de-las-multitudes/quien-decide-lo-se-puede-decir-voz-alta?utm_source=feed"
         },
         {
           "source_name": "El Mundo",
           "bias": "derecha",
-          "headline": "Pánico en el corazón de Europa tras matar un hombre en Cracovia a nueve personas, entre ellas sus padres y su hermana: se investiga como \"terrorismo\"",
-          "angle": "Prioriza el impacto en la seguridad ciudadana europea y los escalofriantes detalles del parricidio previo a la masacre callejera.",
-          "url": "https://www.elmundo.es/internacional/2026/11/08/6aef98c7fdddffb6288b45b0.html"
+          "headline": "Feijóo promete reforzar la lucha contra el crimen organizado y recuperar el OCON-SUR",
+          "angle": "Dirige la atención a la delincuencia organizada en el sur peninsular y cuestiona la política de interior del ministro Grande-Marlaska.",
+          "url": "https://www.elmundo.es/elecciones/elecciones-generales/2026/11/08/6af0738821efa0723d8b4578.html"
         }
       ]
     },
     {
       "id": 5,
-      "category": "Sociedad",
-      "neutral_title": "Sanciones de Protección de Datos a medios por revelar agentes policiales infiltrados",
-      "executive_summary": "La Agencia Española de Protección de Datos ha impuesto una multa económica y exigido la retirada de contenidos a diarios digitales por sus investigaciones periodísticas sobre agentes policiales encubiertos en colectivos sociales. Los medios afectados denuncian el uso instrumental de la normativa de privacidad como una vía de censura administrativa que vulnera el derecho constitucional a la información.",
+      "category": "Libertades",
+      "editorial_title": "Sanciones de la AEPD a medios por investigar infiltraciones policiales abren la alarma sobre la libertad de prensa",
+      "image_url": "https://www.elsaltodiario.com/uploads/fotos/h300/9344d48f/redaccio_barcelona_vilaweb.jpg?v=63952665255",
+      "image_caption": "Redacción de VilaWeb, sancionada por publicar identidades de agentes infiltrados. / El Salto",
+      "executive_summary": "La resolución de la Agencia Española de Protección de Datos contra publicaciones como VilaWeb y La Directa sienta un peligroso precedente sobre el trabajo periodístico de investigación. Al utilizar la normativa de datos personales para censurar reportajes sobre agentes camuflados en movimientos sociales, se vulnera el derecho colectivo a la información en asuntos de indudable interés público.",
       "coverage": {
-        "left": 100,
-        "center": 0,
-        "right": 0
+        "left": 80,
+        "center": 15,
+        "right": 5
       },
       "blindspot": {
         "has_blindspot": true,
         "ignored_by": "derecha",
-        "explanation": "Este asunto es un notable punto ciego de la prensa conservadora y de los grandes diarios generalistas, siendo cubierto de forma exclusiva por cabeceras de izquierda alternativa que denuncian vulneraciones de la libertad de prensa y abusos de los cuerpos policiales."
+        "explanation": "El cerco institucional a la prensa independiente sobre abusos en las cloacas del Estado es completamente silenciado por la prensa conservadora de ámbito estatal."
       },
       "perspectives": [
         {
-          "source_name": "infoLibre",
+          "source_name": "El Salto",
           "bias": "izquierda",
           "headline": "La AEPD multa a VilaWeb con 7.000 euros por informar sobre policías infiltrados",
-          "angle": "Denuncia que las multas administrativas se están utilizando como una herramienta de represión para castigar el periodismo de fiscalización sobre el Ministerio del Interior.",
+          "angle": "Denuncia el uso represivo y político de las agencias administrativas para castigar la fiscalización ciudadana de las fuerzas de seguridad.",
           "url": "https://www.elsaltodiario.com/represion/aepd-multa-vilaweb-informar-policias-infiltrados?utm_source=feed"
         },
         {
-          "source_name": "El Salto",
+          "source_name": "elDiario.es",
           "bias": "izquierda",
-          "headline": "'La Directa' denuncia el uso político de la protección de datos para silenciar sus trabajos sobre infiltrados",
-          "angle": "Analiza el precedente judicial y ético que supone sancionar a medios independientes por identificar a funcionarios públicos en misiones encubiertas no regladas.",
-          "url": "https://www.elsaltodiario.com/periodismo/directa-denuncia-uso-politico-proteccion-datos-silenciar-trabajos-infiltrados?utm_source=feed"
+          "headline": "Brais Cedeira: \"Existe un problema soterrado de corrupción policial al que quizás no se está dando la importancia que tiene\"",
+          "angle": "Evidencia las dificultades estructurales para fiscalizar la opacidad y las prácticas irregulares dentro del aparato policial.",
+          "url": "https://www.20minutos.es/nacional/brais-cedeira-existe-un-problema-soterrado-corrupcion-policial-que-quizas-no-se-esta-dando-importancia-que-tiene_7057750_0.html"
+        },
+        {
+          "source_name": "infoLibre",
+          "bias": "izquierda",
+          "headline": "Tribunales más eficientes y 500 nuevas plazas: los avances de un Gobierno asediado por los jueces",
+          "angle": "Examina la constante fricción entre las garantías de derechos civiles y los sectores conservadores del aparato judicial y estatal.",
+          "url": "https://www.infolibre.es/politica/tribunales-eficientes-500-nuevas-plazas-avances-gobierno-asediado-jueces_1_2239308.html"
         }
       ]
     }
   ],
   "international_topics": [
     {
-      "source_name": "The New Yorker",
-      "original_title": "Did the World Just Gain Hundreds of Millions of Alzheimer’s Patients?",
-      "translated_title": "¿Acaba el mundo de sumar cientos de millones de pacientes con alzhéimer?",
-      "summary": "Una nueva definición clínica de la enfermedad incorpora a personas sin síntomas evidentes mediante biomarcadores. El reportaje profundiza en la feroz controversia médica sobre si este nuevo diagnóstico anticipado responde a un avance real o al interés comercial por comercializar nuevos fármacos de eficacia cuestionada.",
-      "reading_Reason": "Dilemas bioéticos y salud global",
-      "url": "https://www.newyorker.com/magazine/2026/11/09/did-the-world-just-gain-hundreds-of-millions-of-alzheimers-patients"
+      "id": 1,
+      "category": "Geopolítica",
+      "editorial_title": "Donald Trump profundiza su repliegue ideológico y nombra a Stephen Miller tras perder el control del Congreso",
+      "image_url": "https://img.lemde.fr/2026/11/08/18/0/2086/1043/644/322/60/0/b0825dc_ftp-1-frit5lqjmlro-2026-11-08t105645z-941746715-rc2vfoa39m4x-rtrmadp-3-usa-election-trump-maga.JPG",
+      "image_caption": "Donald Trump tras la derrota legislativa en las elecciones de mitad de mandato. / Le Monde",
+      "executive_summary": "La severa derrota del Partido Republicano en las elecciones de mitad de mandato en Estados Unidos, con la pérdida de ambas cámaras legislativas a manos demócratas, ha provocado un cierre de filas de Donald Trump en torno a su núcleo más duro. La designación del ultraconservador Stephen Miller como jefe de gabinete evidencia que, lejos de moderar su retórica, el expresidente apostará por atrincherarse y forzar la confrontación en política exterior.",
+      "coverage": {
+        "left": 40,
+        "center": 35,
+        "right": 25
+      },
+      "blindspot": {
+        "has_blindspot": false,
+        "ignored_by": "ninguno",
+        "explanation": ""
+      },
+      "perspectives": [
+        {
+          "source_name": "Le Monde",
+          "bias": "izquierda",
+          "headline": "Midterms 2026 : Donald Trump estime que « l’Amérique a fait un gigantesque pas en arrière »",
+          "angle": "Subraya el impacto demoledor de la 'ola azul' demócrata y el desconcierto en las filas conservadoras ante la pérdida del poder parlamentario.",
+          "url": "https://www.lemonde.fr/international/article/2026/11/08/midterms-2026-donald-trump-estime-que-l-amerique-a-fait-un-gigantesque-pas-en-arriere-dans-l-histoire-avec-la-victoire-des-democrates_6808439_3210.html"
+        },
+        {
+          "source_name": "The New Yorker",
+          "bias": "izquierda",
+          "headline": "Breaking the Decade-Long Trump Fever",
+          "angle": "Analiza sociológicamente el agotamiento de la retórica autoritaria trumpista entre las mayorías urbanas de Estados Unidos.",
+          "url": "https://www.newyorker.com/magazine/2026/11/16/breaking-the-decade-long-trump-fever"
+        },
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "Debilitado en casa por las urnas, desatado fuera: \"Trump herido es más peligroso\"",
+          "angle": "Advierte de los riesgos internacionales y la imprevisibilidad diplomática de un presidente que busca cimentar legado sin contrapesos internos.",
+          "url": "https://www.elmundo.es/internacional/2026/11/07/6aef36e9fdddff5d338b4588.html"
+        }
+      ]
     },
     {
-      "source_name": "The New Yorker",
-      "original_title": "The Year Math Changed Forever",
-      "translated_title": "El año en que las matemáticas cambiaron para siempre",
-      "summary": "La inteligencia artificial está resolviendo enigmas matemáticos teóricos que permanecían encallados desde hacía décadas. A través de la mirada del influyente matemático Terence Tao, se examina cómo la disciplina afronta una transformación estructural irreversible en sus métodos de demostración.",
-      "reading_Reason": "Fronteras de la ciencia y la IA",
-      "url": "https://www.newyorker.com/magazine/2026/11/09/the-year-math-changed-forever"
+      "id": 2,
+      "category": "Derechos",
+      "editorial_title": "La masacre de Cracovia con nueve muertos reaviva la alarma europea sobre el terrorismo de extrema derecha",
+      "image_url": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f6c3/live/95455f00-dac5-11f1-bda8-29fb69dbc026.jpg",
+      "image_caption": "Cordón policial en la plaza principal de Cracovia tras los disparos. / BBC",
+      "executive_summary": "Un ataque armado perpetrado por un joven fascinado por proclamas supremacistas y neofascistas en el centro de Cracovia y en su propio domicilio familiar ha dejado nueve víctimas mortales. La fiscalía polaca investiga los hechos formalmente como atentado terrorista, en un episodio que sitúa a las fuerzas de seguridad comunitarias ante la urgencia de atajar la radicalización ultra que prolifera en foros virtuales y organizaciones radicales.",
+      "coverage": {
+        "left": 40,
+        "center": 35,
+        "right": 25
+      },
+      "blindspot": {
+        "has_blindspot": false,
+        "ignored_by": "ninguno",
+        "explanation": ""
+      },
+      "perspectives": [
+        {
+          "source_name": "Le Monde",
+          "bias": "izquierda",
+          "headline": "Après l’attentat de Cracovie, la Pologne en état de choc",
+          "angle": "Incide directamente en el perfil del agresor, calificado por Interior como seguidor fanatizado de ideologías de extrema derecha.",
+          "url": "https://www.lemonde.fr/international/article/2026/11/08/la-pologne-en-etat-de-choc-apres-la-fusillade-de-cracovie_6808422_3210.html"
+        },
+        {
+          "source_name": "The New York Times",
+          "bias": "centro",
+          "headline": "What to Know About the Mass Shooting in Krakow, Poland",
+          "angle": "Reporta los hechos con cautela sobre la cronología del tirador y el número de heridos en las distintas localizaciones.",
+          "url": "https://www.nytimes.com/2026/11/08/world/europe/poland-krakow-mass-shooting.html"
+        },
+        {
+          "source_name": "BBC World",
+          "bias": "centro",
+          "headline": "What we know so far after Krakow gun attack",
+          "angle": "Reconstruye las pesquisas policiales iniciales y el hallazgo de los cuerpos familiares tras los disparos indiscriminados en la plaza.",
+          "url": "https://www.bbc.co.uk/news/articles/cmd7q15drwgeo?at_medium=RSS&at_campaign=rss"
+        }
+      ]
     },
     {
-      "source_name": "The New Yorker",
-      "original_title": "An N.B.A. Player Got Hooked on Sports Betting. Soon, He Became the Bet",
-      "translated_title": "Un jugador de la NBA se enganchó a las apuestas deportivas y terminó convirtiéndose en la propia apuesta",
-      "summary": "La historia del descenso a los infiernos de Jontay Porter ilustra los peligros de la normalización del juego en línea en el deporte profesional estadounidense. Una crónica vibrante sobre cómo las deudas con prestamistas llevaron a un atleta de élite a manipular sus propios partidos.",
-      "reading_Reason": "Crónica de investigación y deporte",
-      "url": "https://www.newyorker.com/magazine/2026/11/16/the-nba-player-who-got-hooked-on-sports-betting"
+      "id": 3,
+      "category": "Geopolítica",
+      "editorial_title": "La escalada bélica entre la coalición saudí y los hutíes en Yemen golpea infraestructuras en Riad y causa decenas de bajas civiles",
+      "image_url": "https://static01.nyt.com/images/2026/11/08/world/08int-saudi-attack-fna/08int-saudi-attack-fna-mediumSquareAt3X.jpg",
+      "image_caption": "Restos e impacto tras la intercepción de proyectiles en el distrito financiero de Riad. / NYT",
+      "executive_summary": "La reactivación del conflicto yemení ha provocado una de las jornadas más sangrientas del año, con bombardeos aéreos que han dejado más de una treintena de civiles muertos en Yemen y el lanzamiento masivo de misiles balísticos hacia centros neurálgicos de Arabia Saudí. La confrontación armada continúa desangrando a una población civil sometida a un bloqueo asfixiante mientras las potencias regionales miden fuerzas.",
+      "coverage": {
+        "left": 35,
+        "center": 40,
+        "right": 25
+      },
+      "blindspot": {
+        "has_blindspot": true,
+        "ignored_by": "derecha",
+        "explanation": "La cobertura conservadora se enfoca en la defensa antimisiles de Arabia Saudí y los intereses petroleros, omitiendo el alto número de civiles muertos por los bombardeos aliados en suelo yemení."
+      },
+      "perspectives": [
+        {
+          "source_name": "The New York Times",
+          "bias": "centro",
+          "headline": "More Than 50 Killed in Yemen in One of the Deadliest 24 Hours of the War",
+          "angle": "Pone el foco en el drama humano de la población civil yemení atrapada en la intensificación de las operaciones bélicas.",
+          "url": "https://www.nytimes.com/2026/11/07/world/middleeast/more-than-50-killed-in-yemen.html"
+        },
+        {
+          "source_name": "BBC World",
+          "bias": "centro",
+          "headline": "Houthis say at least 33 killed in Saudi air strike",
+          "angle": "Recoge las denuncias del impacto de las bombas de la coalición sobre áreas pobladas y la falta de respuesta oficial de Riad.",
+          "url": "https://www.bbc.co.uk/news/articles/c65yn1v99ypmo?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "source_name": "ABC",
+          "bias": "derecha",
+          "headline": "Arabia Saudí intercepta cinco misiles disparados por los hutíes sobre Riad y el sur del país",
+          "angle": "Subraya la eficacia militar saudí ante el hostigamiento de las milicias respaldadas por Irán contra intereses estratégicos.",
+          "url": "https://www.abc.es/internacional/arabia-saudi-intercepta-cinco-misiles-disparados-huties-20261108110216-nt.html"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Democracia",
+      "editorial_title": "La caída de Santiago Peña y el desplome financiero de Paraguay destapan las fracturas institucionales de la región",
+      "image_url": "https://i.guim.co.uk/img/media/3279bdc7ce3e00c2cbd356e73e342e1cba40051e/294_0_4320_3456/master/4320.jpg?width=140&quality=85&auto=format&fit=max&s=53fe013eafe5b6ddce4601a63f181f9a",
+      "image_caption": "Movilizaciones populares en Asunción contra la quiebra bancaria y la cúpula gubernamental. / The Guardian",
+      "executive_summary": "La destitución parlamentaria y posterior detención domiciliaria del mandatario paraguayo de derechas Santiago Peña, tras un colapso financiero que ha bloqueado el acceso a ahorros al 60% de los ciudadanos, agrava la inestabilidad política en el Cono Sur. El desfalco expone la fragilidad de modelos desreguladores que dejan a las clases populares sin colchón protector frente a prácticas bancarias fraudulentas.",
+      "coverage": {
+        "left": 45,
+        "center": 45,
+        "right": 10
+      },
+      "blindspot": {
+        "has_blindspot": true,
+        "ignored_by": "derecha",
+        "explanation": "Los grandes diarios generalistas de la derecha evitan analizar la crisis paraguaya al comprometer el relato de éxito económico de gobiernos ultraliberales en la región."
+      },
+      "perspectives": [
+        {
+          "source_name": "The Guardian",
+          "bias": "izquierda",
+          "headline": "Ousted Paraguay president under house arrest after banking crisis leaves 60% of country unable to access accounts",
+          "angle": "Enfatiza el impacto social de la estafa bancaria sobre millones de familias trabajadoras que han perdido liquidez inmediata.",
+          "url": "https://www.theguardian.com/world/2026/nov/07/ousted-paraguay-president-under-house-arrest-after-banking-crisis-leaves-60-of-country-unable-to-access-accounts"
+        },
+        {
+          "source_name": "BBC World",
+          "bias": "centro",
+          "headline": "Paraguay's former president charged after bank collapse",
+          "angle": "Explica el proceso legal de impugnación política y la imputación formal de Peña por irregularidades financieras del banco suspendido.",
+          "url": "https://www.bbc.co.uk/news/articles/c68jzzvjgdy9o?at_medium=RSS&at_campaign=rss"
+        },
+        {
+          "source_name": "infoLibre",
+          "bias": "izquierda",
+          "headline": "Los gobiernos de ultraderecha agrandan la desunión de América Latina y allanan el camino a Trump",
+          "angle": "Contextualiza la inestabilidad de Asunción dentro de la fractura ideológica que descompone los organismos multilaterales latinoamericanos.",
+          "url": "https://www.infolibre.es/internacional/gobiernos-ultraderecha-agrandan-desunion-america-latina-allanan-camino-trump_1_2239642.html"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Democracia",
+      "editorial_title": "El histórico retroceso del Congreso Nacional Africano marca un cambio de ciclo político en Sudáfrica",
+      "image_url": "https://static01.nyt.com/images/2026/11/08/multimedia/08int-safrica-election-analysis-chqf/08int-safrica-election-analysis-chqf-mediumSquareAt3X.jpg",
+      "image_caption": "Jornada electoral en Sudáfrica ante el retroceso del partido histórico de Mandela. / NYT",
+      "executive_summary": "El descontento ciudadano generalizado ante los continuos cortes energéticos, la escasez de agua y el estancamiento económico ha hundido el respaldo al Congreso Nacional Africano por debajo del tercio de los sufragios en los comicios locales. El histórico movimiento de liberación afronta una erosión estructural derivada de años de desatención de los servicios públicos esenciales y denuncias de clientelismo.",
+      "coverage": {
+        "left": 45,
+        "center": 40,
+        "right": 15
+      },
+      "blindspot": {
+        "has_blindspot": true,
+        "ignored_by": "derecha",
+        "explanation": "La prensa conservadora española desatiende los comicios municipales africanos, ignorando la trascendencia geopolítica de las transformaciones democráticas en el continente."
+      },
+      "perspectives": [
+        {
+          "source_name": "The Guardian",
+          "bias": "izquierda",
+          "headline": "ANC faces bruising defeat in South African local elections with 80% of ballots counted",
+          "angle": "Vincula el batacazo electoral al hartazgo popular por la degradación del suministro eléctrico, la red hídrica y la desigualdad urbana.",
+          "url": "https://www.theguardian.com/world/2026/nov/06/anc-faces-defeat-south-african-local-elections"
+        },
+        {
+          "source_name": "The New York Times",
+          "bias": "centro",
+          "headline": "South Africa’s Politics May Never Be the Same Again",
+          "angle": "Pone el foco en el fin del monopolio partidista hegemónico y la normalización de Sudáfrica como un sistema de multipartidismo fragmentado.",
+          "url": "https://www.nytimes.com/2026/11/08/world/africa/south-africa-election-african-national-congress.html"
+        },
+        {
+          "source_name": "BBC World",
+          "bias": "centro",
+          "headline": "ANC faces anger over poor services as South Africans vote in local elections",
+          "angle": "Recoge el testimonio de los votantes desencantados en los suburbios tras décadas de promesas incumplidas en infraestructura básica.",
+          "url": "https://www.theguardian.com/world/2026/nov/04/anc-south-africa-local-elections-water-outages-power-cuts"
+        }
+      ]
     }
-  ]
+  ],
+  "habla_con_un_hetero": {
+    "intro_joke": "Todo lo que necesitas fingir que te apasiona para superar con dignidad la charla junto a la máquina de café sin que te pregunten por el fuera de juego.",
+    "matches_and_news": [
+      {
+        "competition": "LaLiga",
+        "headline": "El Real Madrid asalta Mestalla y el liderato queda en un puño a la espera del Atlético-Barça",
+        "talking_point": "El Madrid cumplió ganando a domicilio en Valencia para meter presión arriba antes del duelo crucial de esta noche entre los de Simeone y el conjunto culé. Si te sacan el tema, di que el vestuario blanco ha recuperado la pegada y que Mestalla siempre aprieta.",
+        "url": "https://www.abc.es/deportes/real-madrid/golpe-mesa-gran-madrid-mestalla-20261107225738-nt.html"
+      },
+      {
+        "competition": "Tenis",
+        "headline": "Carlos Alcaraz pelea en la final del Masters 1000 de París frente al potente Ben Shelton",
+        "talking_point": "El murciano busca levantar su primer trofeo en la pista cubierta parisina ante Shelton, tenista entrenado ahora por Juan Carlos Ferrero. El dato clave para soltar en el ascensor: Alcaraz llega con sed de revancha tras caer ante el estadounidense en el US Open.",
+        "url": "https://elpais.com/deportes/tenis/2026-11-08/ben-shelton-carlos-alcaraz-en-directo-la-final-del-masters-1000-de-paris-en-vivo.html"
+      },
+      {
+        "competition": "Golf",
+        "headline": "Jon Rahm rompe su sequía y conquista el torneo de Abu Dabi",
+        "talking_point": "Rahm se impuso con autoridad este fin de semana firmando su primera victoria fuera del circuito saudí desde el Masters de 2023. Para quedar como un entendido: suelta que ha recuperado las sensaciones con el putt justo a tiempo de volver a la gira americana.",
+        "url": "https://elpais.com/deportes/2026-11-08/la-liberacion-de-jon-rahm-gana-en-abu-dabi-despues-de-la-desaparicion-de-liv.html"
+      },
+      {
+        "competition": "Segunda División",
+        "headline": "Emocionado homenaje del fútbol y el Heliodoro al malogrado Jesús de Miguel",
+        "talking_point": "El deporte español continúa consternado por la trágica pérdida del delantero del Tenerife tras un golpe fortuito en el campo. Todo el fútbol profesional ha arropado a la plantilla canaria en un ambiente de absoluto respeto y recogimiento.",
+        "url": "https://elpais.com/deportes/2026-11-07/el-cd-tenerife-despide-a-jesus-de-miguel-sobre-el-cesped-damos-gracias-de-haberte-conocido.html"
+      }
+    ]
+  }
 }
