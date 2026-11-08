@@ -7,11 +7,13 @@
 const state = {
   data: null,
   filter: "all", // 'all' | 'blindspot'
+  activeAxisIndex: 0,
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initFilterButtons();
+  initPreCampaignTabs();
   loadDailyData();
 });
 
@@ -57,6 +59,28 @@ function initFilterButtons() {
   });
 }
 
+/* --- Pestañas de Precampaña --- */
+function initPreCampaignTabs() {
+  const tabs = document.querySelectorAll(".precampana-tab");
+  const trackerView = document.getElementById("precampana-tracker-view");
+  const comparatorView = document.getElementById("precampana-comparator-view");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+      const target = tab.getAttribute("data-pctab");
+      if (target === "comparator") {
+        trackerView.hidden = true;
+        comparatorView.hidden = false;
+      } else {
+        trackerView.hidden = false;
+        comparatorView.hidden = true;
+      }
+    });
+  });
+}
+
 /* --- Carga de ./data.json --- */
 async function loadDailyData() {
   const spainContainer = document.getElementById("spain-topics-container");
@@ -84,10 +108,12 @@ function renderAllSections() {
 
   const spainTopics = state.data.spain_topics || state.data.top_topics || [];
   const intlTopics = state.data.international_topics || [];
+  const precampanaData = state.data.precampana || null;
   const sportsData = state.data.habla_con_un_hetero || null;
 
   renderTopicList("spain-topics-container", spainTopics, "España");
   renderTopicList("intl-topics-container", intlTopics, "Internacional");
+  renderPreCampaignSection(precampanaData);
   renderSportsSection(sportsData);
 }
 
@@ -245,6 +271,104 @@ function createTopicCardHTML(topic, idx) {
       </div>
     </article>
   `;
+}
+
+/* --- Renderizado de Precampaña y Comparador de Programas --- */
+function renderPreCampaignSection(precampana) {
+  const trackerGrid = document.getElementById("parties-tracker-grid");
+  const overviewEl = document.getElementById("precampana-overview");
+  const axisBar = document.getElementById("axis-selector-bar");
+  const axisBox = document.getElementById("axis-comparison-container");
+  if (!trackerGrid) return;
+
+  if (!precampana) {
+    trackerGrid.innerHTML = `<div class="empty-state">El radar de precampaña se actualizará en la próxima ejecución diaria.</div>`;
+    return;
+  }
+
+  if (precampana.overview && overviewEl) {
+    overviewEl.textContent = precampana.overview;
+  }
+
+  const parties = precampana.parties_tracker || [];
+  if (parties.length === 0) {
+    trackerGrid.innerHTML = `<div class="empty-state">Sin datos de seguimiento de partidos hoy.</div>`;
+  } else {
+    trackerGrid.innerHTML = parties
+      .map(
+        (p) => `
+        <article class="party-card bloc-${escapeAttribute(p.bloc || "centro")}">
+          <div class="party-card-header">
+            <span class="party-name">${escapeHTML(p.party_name)}</span>
+            <span class="program-status-pill">📄 ${escapeHTML(p.program_status)}</span>
+          </div>
+          <div class="party-item-block">
+            <span class="party-item-label">🗣️ Qué han dicho</span>
+            <p>${escapeHTML(p.what_they_said)}</p>
+          </div>
+          <div class="party-item-block">
+            <span class="party-item-label">🏛️ Qué han hecho (BOE / Congreso)</span>
+            <p>${escapeHTML(p.what_they_did)}</p>
+          </div>
+          <div class="party-proposal-highlight">
+            <span class="party-item-label">📌 Medida / Eje estrella</span>
+            <span>${escapeHTML(p.flagship_proposal)}</span>
+          </div>
+        </article>
+      `
+      )
+      .join("");
+  }
+
+  const axes = precampana.program_comparisons || [];
+  if (axes.length === 0) {
+    if (axisBox) axisBox.innerHTML = `<div class="empty-state">Sin comparativa de ejes disponible hoy.</div>`;
+    return;
+  }
+
+  if (state.activeAxisIndex >= axes.length) {
+    state.activeAxisIndex = 0;
+  }
+
+  if (axisBar) {
+    axisBar.innerHTML = axes
+      .map(
+        (ax, i) => `
+        <button type="button" class="axis-btn ${i === state.activeAxisIndex ? "active" : ""}" data-axis-idx="${i}">
+          ${escapeHTML(ax.axis_title)}
+        </button>
+      `
+      )
+      .join("");
+
+    axisBar.querySelectorAll(".axis-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.activeAxisIndex = Number(btn.getAttribute("data-axis-idx")) || 0;
+        renderPreCampaignSection(precampana);
+      });
+    });
+  }
+
+  const activeAxis = axes[state.activeAxisIndex];
+  if (axisBox && activeAxis) {
+    axisBox.innerHTML = `
+      <div class="axis-comparison-grid">
+        ${(activeAxis.positions || [])
+          .map(
+            (pos) => `
+            <div class="axis-position-card">
+              <div class="axis-position-top">
+                <span class="source-name">${escapeHTML(pos.party_name)}</span>
+                <span class="bias-tag bias-${escapeAttribute(pos.bloc || "centro")}">${escapeHTML(pos.bloc || "centro")}</span>
+              </div>
+              <p class="axis-proposal-text">${escapeHTML(pos.proposal)}</p>
+            </div>
+          `
+          )
+          .join("")}
+      </div>
+    `;
+  }
 }
 
 /* --- Renderizado de "Habla con un hetero" (Deportes / Fútbol) --- */

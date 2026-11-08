@@ -186,14 +186,57 @@ class SportsSection(BaseModel):
     )
 
 
+class PartyWatch(BaseModel):
+    party_name: str = Field(description="Nombre del partido o coalición (ej. PSOE, PP, Sumar, Podemos, Vox, Junts/ERC)")
+    bloc: Literal["izquierda", "centro", "derecha"] = Field(description="Ubicación de bloque para el color")
+    program_status: str = Field(
+        description="Estado del programa electoral o documento marco (ej. 'Programa marco presentado', 'En ponencia sectorial', 'Borrador económico publicado')"
+    )
+    what_they_said: str = Field(
+        description="Qué han dicho hoy/esta semana: principal mensaje, promesa o eje discursivo de precampaña (1-2 frases sin propaganda)"
+    )
+    what_they_did: str = Field(
+        description="Qué han hecho en la práctica (votaciones en el Congreso, medidas en gobiernos autonómicos/ministerios o actos clave)"
+    )
+    flagship_proposal: str = Field(description="Medida estrella o propuesta concreta que están impulsando")
+
+
+class PolicyPartyPosition(BaseModel):
+    party_name: str = Field(description="Partido o bloque (ej. PSOE, Sumar / Podemos, PP, Vox)")
+    bloc: Literal["izquierda", "centro", "derecha"] = Field(description="Bloque para código de color")
+    proposal: str = Field(description="Propuesta concreta y verificable de su programa o anuncios sobre este eje (1-2 frases)")
+
+
+class PolicyComparisonAxis(BaseModel):
+    axis_title: str = Field(description="Eje temático de comparación (ej. 'Vivienda y Alquiler', 'Fiscalidad y Salarios', 'Sanidad y Servicios Públicos')")
+    positions: List[PolicyPartyPosition] = Field(
+        description="Comparativa de qué propone cada partido principal en este ámbito (estilo afinidadpolitica.es / 29nov.es sin test)"
+    )
+
+
+class PreCampaignSection(BaseModel):
+    overview: str = Field(
+        description="Resumen analítico de 1 párrafo sobre el pulso de la precampaña hoy, alianzas, encuestas y estado de los programas electorales"
+    )
+    parties_tracker: List[PartyWatch] = Field(
+        description="Seguimiento de los principales partidos (PSOE, Sumar/Izquierda, PP, Vox y socios parlamentarios): qué dicen, qué hacen y estado del programa"
+    )
+    program_comparisons: List[PolicyComparisonAxis] = Field(
+        description="Entre 3 y 4 ejes clave comparando cara a cara las propuestas programáticas de cada partido"
+    )
+
+
 class DailyEdition(BaseModel):
     edition_title: str = Field(description="Subtítulo editorial sobrio que resuma la jornada")
     daily_briefing: str = Field(
         description="Saludo matinal de 2-3 frases con tono cercano, inteligente y progresista (estilo boletín de autor) resumiendo por dónde va el día en España y el mundo"
     )
-    spain_topics: List[TopicItem] = Field(description="Las 5 grandes noticias del día en España")
+    spain_topics: List[TopicItem] = Field(description="Las 5 grandes noticias del día en España (separadas del ruido de precampaña)")
     international_topics: List[TopicItem] = Field(
         description="Las 5 grandes noticias internacionales del día (usando The Guardian, NYT, BBC, Le Monde, The New Yorker y prensa nacional)"
+    )
+    precampana: PreCampaignSection = Field(
+        description="Apartado exclusivo de Precampaña y Comparador de Programas (estilo afinidadpolitica.es / 29nov.es / politicaelectoral.com)"
     )
     habla_con_un_hetero: SportsSection = Field(
         description="Sección 'Habla con un hetero': resumen brevísimo del fútbol y deporte más relevante en España"
@@ -383,7 +426,12 @@ Eres el director editorial de **"Noticias de la tierra"**, un diario digital mat
    - Todo redactado en español. En `perspectives`, incluye los medios internacionales que la cubren (puedes traducir o explicar su enfoque en español conservando su `url` original).
    - Asigna también `image_url` real extraída de las entradas, barra de `coverage` y `blindspot`.
 
-3. **`habla_con_un_hetero` (Sección final de supervivencia deportiva/futbolera)**:
+3. **`precampana` (Observatorio exclusivo de Precampaña y Comparador Programático)**:
+   - Separa el ruido partidista y electoral de las noticias principales de `spain_topics` y concéntralo aquí, combinando lo mejor de proyectos como *afinidadpolitica.es*, *29nov.es* o *politicaelectoral.com* (pero como panel informativo directo, sin cuestionarios ni tests).
+   - En `parties_tracker`, analiza qué han dicho hoy/esta semana los distintos partidos (PSOE, Sumar/Podemos, PP, Vox y bloques nacionalistas/soberanistas), **qué han hecho realmente** (votaciones en el Congreso o boletines oficiales frente a sus promesas) y **en qué estado están sus programas electorales**.
+   - En `program_comparisons`, crea 3 o 4 tablas comparativas por ejes (ej. *Vivienda*, *Impuestos y Trabajo*, *Sanidad y Educación*, *Transición Ecológica*) contrastando qué propone exactamente cada partido.
+
+4. **`habla_con_un_hetero` (Sección final de supervivencia deportiva/futbolera)**:
    - Una sección breve, ágil y con un guiño irónico pensada para enterarse en 30 segundos del deporte más relevante en España (especialmente fútbol: resultados de LaLiga/Champions/Selección, **quién marcó los goles**, o la noticia deportiva del día).
    - Genera entre 3 y 4 píldoras (`matches_and_news`) directas al grano con resultado, goleadores y enlace original.
 

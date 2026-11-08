@@ -432,6 +432,120 @@
       ]
     }
   ],
+  "precampana": {
+    "overview": "En pleno clima de precampaña, los partidos aceleran la presentación de sus documentos marco mientras el Congreso se convierte en escaparate electoral. La brecha entre las promesas de mitin y lo votado en el BOE marca la semana: la vivienda, el modelo fiscal y la financiación de los servicios públicos centran los borradores programáticos.",
+    "parties_tracker": [
+      {
+        "party_name": "PSOE",
+        "bloc": "izquierda",
+        "program_status": "Documento marco económico presentado",
+        "what_they_said": "Promete ampliar el parque público de vivienda hasta el 9% y blindar por ley la revalorización de pensiones y becas.",
+        "what_they_did": "Ha aprobado en Consejo de Ministros el nuevo bono de alquiler joven, aunque mantiene bloqueada con sus socios la reforma fiscal sobre alquileres de temporada.",
+        "flagship_proposal": "Creación de una empresa pública estatal de suelo y vivienda social para construir 40.000 pisos anuales."
+      },
+      {
+        "party_name": "Sumar / Izquierda Alternativa",
+        "bloc": "izquierda",
+        "program_status": "Ponencias sectoriales publicadas",
+        "what_they_said": "Centra su discurso en reducir la jornada laboral a 35 horas, prohibir la compra especulativa de vivienda y hacer permanente el impuesto a banca y energéticas.",
+        "what_they_did": "Registró en el Congreso la proposición de ley para regular los contratos de temporada y por habitaciones y votó en contra de rebajas fiscales a eléctricas.",
+        "flagship_proposal": "Prestación universal por crianza de 200 € al mes por hijo y tope estricto a los alquileres de temporada."
+      },
+      {
+        "party_name": "PP",
+        "bloc": "derecha",
+        "program_status": "Plan económico y fiscal avanzado",
+        "what_they_said": "Promete una rebaja generalizada del IRPF e Impuesto de Sociedades, derogar la Ley de Vivienda estatal y reducir ministerios.",
+        "what_they_did": "En las comunidades donde gobierna se ha negado a declarar zonas tensionadas de alquiler y ha incrementado los conciertos sanitarios y educativos privados.",
+        "flagship_proposal": "Avales hipotecarios del 100% para jóvenes y bonificación fiscal del 100% a propietarios que saquen pisos vacíos al mercado sin tope de precio."
+      },
+      {
+        "party_name": "Vox",
+        "bloc": "derecha",
+        "program_status": "Agenda programática publicada",
+        "what_they_said": "Enfoca su precampaña en el recorte del gasto autonómico, rebajas radicales de impuestos y endurecimiento de la política migratoria.",
+        "what_they_did": "Votó en contra de la senda de estabilidad presupuestaria y de la subida del SMI y pensiones no contributivas en las comisiones parlamentarias.",
+        "flagship_proposal": "Tipo único reducido de IRPF y supresión de subvenciones a sindicatos, patronal y transición ecológica."
+      }
+    ],
+    "program_comparisons": [
+      {
+        "axis_title": "🏠 Vivienda y Alquiler",
+        "positions": [
+          {
+            "party_name": "Sumar / Podemos",
+            "bloc": "izquierda",
+            "proposal": "Topar por ley los alquileres habituales, de temporada y habitaciones; prohibir compras de fondos buitre en zonas tensionadas."
+          },
+          {
+            "party_name": "PSOE",
+            "bloc": "izquierda",
+            "proposal": "Desplegar avales ICO, incentivos fiscales a pequeños caseros que bajen precios y ampliar vivienda pública en suelos de la Sareb."
+          },
+          {
+            "party_name": "PP",
+            "bloc": "derecha",
+            "proposal": "Derogar el control de precios de la Ley de Vivienda, liberalizar suelo urbanizable y endurecer desalojos en 24 horas."
+          },
+          {
+            "party_name": "Vox",
+            "bloc": "derecha",
+            "proposal": "Eliminar impuestos asociados a la compra de primera vivienda (ITP/IVA) y liberalización total del suelo."
+          }
+        ]
+      },
+      {
+        "axis_title": "💶 Impuestos y Trabajo",
+        "positions": [
+          {
+            "party_name": "Sumar / Podemos",
+            "bloc": "izquierda",
+            "proposal": "Jornada laboral hacia las 35h sin recorte salarial, impuesto permanente a grandes fortunas, banca y eléctricas."
+          },
+          {
+            "party_name": "PSOE",
+            "bloc": "izquierda",
+            "proposal": "Subida progresiva del SMI al 60% del salario medio y tributación mínima del 15% efectivo para grandes grupos societarios."
+          },
+          {
+            "party_name": "PP",
+            "bloc": "derecha",
+            "proposal": "Deflactar el IRPF en rentas medias y bajas, suprimir el impuesto de Patrimonio y rebajar cotizaciones a empresas."
+          },
+          {
+            "party_name": "Vox",
+            "bloc": "derecha",
+            "proposal": "Sistema de dos únicos tramos de IRPF (15% y 25%) y eliminación de Sucesiones, Donaciones y Patrimonio."
+          }
+        ]
+      },
+      {
+        "axis_title": "🏥 Sanidad y Servicios Públicos",
+        "positions": [
+          {
+            "party_name": "Sumar / Podemos",
+            "bloc": "izquierda",
+            "proposal": "Blindar la gestión 100% directa, revertir privatizaciones hospitalarias e incluir dentista, óptica y salud mental en la cartera pública."
+          },
+          {
+            "party_name": "PSOE",
+            "bloc": "izquierda",
+            "proposal": "Limitar por ley los conciertos con ánimo de lucro y plan de choque estatal contra las listas de espera en atención primaria."
+          },
+          {
+            "party_name": "PP",
+            "bloc": "derecha",
+            "proposal": "Colaboración público-privada para absorber listas de espera, libre elección de hospital y cheque escolar/sanitario."
+          },
+          {
+            "party_name": "Vox",
+            "bloc": "derecha",
+            "proposal": "Recentralizar la competencia de Sanidad y Educación en el Estado con tarjeta única nacional y cheque escolar."
+          }
+        ]
+      }
+    ]
+  },
   "habla_con_un_hetero": {
     "intro_joke": "Tu dosis de pragmatismo sobre el césped y el asfalto para fingir que te apasiona la presión alta antes del segundo café de la mañana.",
     "matches_and_news": [

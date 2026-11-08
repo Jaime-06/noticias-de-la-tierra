@@ -75,6 +75,7 @@
       <div class="section-jumps">
         <a href="#sec-espana" class="jump-link">🇪🇸 España (5)</a>
         <a href="#sec-internacional" class="jump-link">🌍 Internacional (5)</a>
+        <a href="#sec-precampana" class="jump-link jump-precampana">🗳️ Precampaña y Programas</a>
         <a href="#sec-hetero" class="jump-link jump-hetero">⚽ Habla con un hetero</a>
       </div>
       <div class="filter-group">
@@ -86,7 +87,7 @@
     <!-- SECCIÓN 1: 5 GRANDES TEMAS DE ESPAÑA -->
     <section id="sec-espana" class="news-block">
       <div class="section-divider">
-        <span class="section-kicker">BLOQUE NACIONAL · 5 GRANDES TEMAS</span>
+        <span class="section-kicker">BLOQUE NACIONAL · 5 GRANDES TEMAS (SIN RUIDO DE CAMPAÑA)</span>
         <h2 class="section-title">España hoy</h2>
         <p class="section-desc">Las cinco historias clave del día con enfoque social y el desglose de cómo las cuenta cada cabecera.</p>
       </div>
@@ -107,7 +108,37 @@
       </div>
     </section>
 
-    <!-- SECCIÓN 3: HABLA CON UN HETERO (Deporte / Fútbol) -->
+    <!-- SECCIÓN 3: OBSERVATORIO DE PRECAMPAÑA Y COMPARADOR DE PROGRAMAS -->
+    <section id="sec-precampana" class="precampana-section" aria-labelledby="precampana-heading">
+      <div class="precampana-header">
+        <div class="precampana-top-row">
+          <div>
+            <span class="precampana-badge">🗳️ RADAR ELECTORAL · SIN TESTS NI RUIDO PARTIDISTA</span>
+            <h2 id="precampana-heading" class="precampana-title">Especial Precampaña: Dicho vs. Hecho y Programas</h2>
+          </div>
+          <div class="precampana-tabs" role="tablist" aria-label="Vistas de precampaña">
+            <button type="button" class="precampana-tab active" data-pctab="tracker">📋 Qué dicen vs. Qué hacen</button>
+            <button type="button" class="precampana-tab" data-pctab="comparator">⚖️ Comparador de propuestas</button>
+          </div>
+        </div>
+        <p id="precampana-overview" class="precampana-overview">
+          Seguimiento diario de promesas, votaciones reales en el BOE/Congreso, estado de los programas electorales y comparativa directa por ejes temáticos (inspirado en afinidadpolitica.es, 29nov.es y politicaelectoral.com).
+        </p>
+      </div>
+
+      <!-- Vista A: Seguimiento de partidos (Qué dicen / Qué hacen / Estado del programa) -->
+      <div id="precampana-tracker-view" class="precampana-view">
+        <div id="parties-tracker-grid" class="parties-grid"></div>
+      </div>
+
+      <!-- Vista B: Comparador de programas por ejes temáticos -->
+      <div id="precampana-comparator-view" class="precampana-view" hidden>
+        <div id="axis-selector-bar" class="axis-selector-bar"></div>
+        <div id="axis-comparison-container" class="axis-comparison-box"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: HABLA CON UN HETERO (Deporte / Fútbol) -->
     <section id="sec-hetero" class="hetero-section" aria-labelledby="hetero-heading">
       <div class="hetero-header">
         <div class="hetero-badge">⚽ KIT DE SUPERVIVENCIA SOCIAL</div>

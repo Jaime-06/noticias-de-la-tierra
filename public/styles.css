@@ -23,6 +23,11 @@
   --color-sports-bg: #eef7f0;
   --color-sports-border: #86efac;
 
+  /* Precampaña / Radar Electoral */
+  --color-election: #6d28d9;
+  --color-election-bg: #f5f2fb;
+  --color-election-border: #c4b5fd;
+
   /* Blindspot alerta */
   --blindspot-bg: #fff8eb;
   --blindspot-border: #d97706;
@@ -58,6 +63,10 @@
   --color-sports: #4ade80;
   --color-sports-bg: #142219;
   --color-sports-border: #166534;
+
+  --color-election: #a78bfa;
+  --color-election-bg: #1c1726;
+  --color-election-border: #4c1d95;
 
   --blindspot-bg: #261e12;
   --blindspot-border: #f59e0b;
@@ -273,6 +282,12 @@ body {
 .jump-hetero {
   border-color: var(--color-sports-border);
   color: var(--color-sports);
+}
+
+.jump-precampana {
+  border-color: var(--color-election-border);
+  color: var(--color-election);
+  font-weight: 600;
 }
 
 .filter-group {
@@ -609,7 +624,206 @@ body {
   text-decoration: underline;
 }
 
-/* SECCIÓN 3: HABLA CON UN HETERO (Fútbol y Deporte exprés) */
+/* SECCIÓN 3: OBSERVATORIO DE PRECAMPAÑA Y COMPARADOR DE PROGRAMAS */
+.precampana-section {
+  margin-top: 4rem;
+  padding: 2.1rem;
+  border-radius: 12px;
+  background-color: var(--color-election-bg);
+  border: 2px solid var(--color-election-border);
+}
+
+.precampana-header {
+  margin-bottom: 1.65rem;
+}
+
+.precampana-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.7rem;
+}
+
+.precampana-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-election);
+  margin-bottom: 0.35rem;
+}
+
+.precampana-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.95rem, 4vw, 2.55rem);
+  font-weight: 400;
+  line-height: 1.12;
+  color: var(--text-primary);
+}
+
+.precampana-overview {
+  font-size: 0.96rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.precampana-tabs {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.precampana-tab {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  padding: 0.45rem 0.95rem;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.precampana-tab:hover {
+  border-color: var(--color-election);
+  color: var(--text-primary);
+}
+
+.precampana-tab.active {
+  background: var(--color-election);
+  color: #ffffff;
+  border-color: var(--color-election);
+}
+
+.parties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.1rem;
+}
+
+.party-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.party-card.bloc-izquierda { border-top: 4px solid var(--color-left); }
+.party-card.bloc-centro { border-top: 4px solid var(--color-center); }
+.party-card.bloc-derecha { border-top: 4px solid var(--color-right); }
+
+.party-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.party-name {
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--text-primary);
+}
+
+.program-status-pill {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background-color: var(--bg-subtle);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.party-item-block {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.party-item-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 0.18rem;
+}
+
+.party-proposal-highlight {
+  background-color: var(--bg-subtle);
+  padding: 0.65rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.84rem;
+  color: var(--text-primary);
+  border-left: 3px solid var(--color-election);
+}
+
+/* Comparador por Ejes */
+.axis-selector-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.2rem;
+}
+
+.axis-btn {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  padding: 0.42rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.axis-btn.active {
+  background-color: var(--text-primary);
+  color: var(--bg-page);
+  border-color: var(--text-primary);
+}
+
+.axis-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.axis-position-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1.1rem;
+}
+
+.axis-position-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.55rem;
+}
+
+.axis-proposal-text {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* SECCIÓN 4: HABLA CON UN HETERO (Fútbol y Deporte exprés) */
 .hetero-section {
   margin-top: 4rem;
   padding: 2rem;
