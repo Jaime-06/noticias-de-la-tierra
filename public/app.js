@@ -222,7 +222,7 @@ function createTopicCardHTML(topic, idx) {
 
       <div class="coverage-box" aria-label="Distribución de cobertura ideológica">
         <div class="coverage-header">
-          <span>BALANCE DE COBERTURA (ROJO = IZQUIERDA · AZUL = DERECHA)</span>
+          <span>BALANCE DE COBERTURA</span>
           <span>${(topic.perspectives || []).length} ${
             (topic.perspectives || []).length === 1 ? "medio" : "medios"
           }</span>
