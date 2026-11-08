@@ -1,107 +1,15 @@
 {
-  "generated_at": "2026-11-08T08:00:00+01:00",
-  "date_formatted": "Edición de muestra · 8 de noviembre de 2026",
+  "generated_at": "2026-11-08T14:17:51.544391+00:00",
+  "date_formatted": "08 de November de 2026",
   "sources_count": 6,
-  "edition_title": "Presupuestos en el aire, tensión en el mercado de la vivienda y auditoría ferroviaria",
-  "daily_briefing": "¡Buenos días! Hoy los kioscos digitales amanecen divididos entre la aritmética parlamentaria para sacar adelante la senda de déficit y el debate sobre la intervención del mercado del alquiler. Mientras la prensa progresista pone el foco en las medidas sociales y la transición ecológica, la cabecera conservadora subraya la presión fiscal y las concesiones a los socios parlamentarios. Café en mano, vemos cómo lo cuenta cada uno.",
+  "edition_title": "Pulso electoral bajo la sombra de Urda y las derivadas judiciales",
+  "daily_briefing": "Buenos días. Arrancamos este domingo con la mirada puesta en las revelaciones técnicas del trágico siniestro de Urda y en una precampaña del 29-N que sube de decibelios con promesas de blindaje constitucional y tensión por los pactos. Además, te traemos el pulso de las investigaciones de Adif y los puntos ciegos informativos que marcan la jornada.",
   "top_topics": [
     {
       "id": 1,
-      "category": "Política y Economía",
-      "neutral_title": "El Gobierno negocia in extremis la senda de estabilidad presupuestaria con sus socios parlamentarios",
-      "executive_summary": "El Ministerio de Hacienda encara una semana decisiva para aprobar el techo de gasto y los objetivos de déficit que servirán de base a los próximos Presupuestos Generales. Mientras el Ejecutivo busca cerrar un acuerdo fiscal equilibrado que satisfaga tanto a Bruselas como a sus aliados parlamentarios, los distintos bloques mediáticos difieren sobre si la prioridad debe ser el alivio tributario o la ampliación del escudo social.",
-      "coverage": {
-        "left": 50,
-        "center": 25,
-        "right": 25
-      },
-      "blindspot": {
-        "has_blindspot": false,
-        "ignored_by": "ninguno",
-        "explanation": "Cobertura transversal en todos los espectros ideológicos con enfoques contrapuestos sobre política fiscal."
-      },
-      "perspectives": [
-        {
-          "source_name": "Kloshletter",
-          "bias": "centro",
-          "headline": "Cuentas pendientes: la calculadora del Congreso vuelve a echar humo",
-          "angle": "Resume de forma pragmática los votos que necesita el Ejecutivo y el calendario que exige la Comisión Europea.",
-          "url": "https://kloshletter.substack.com/"
-        },
-        {
-          "source_name": "El País",
-          "bias": "izquierda",
-          "headline": "Hacienda ofrece margen inversor a las comunidades para encauzar la senda de estabilidad",
-          "angle": "Destaca la voluntad negociadora del Gobierno y el margen de gasto social que permitiría el nuevo techo presupuestario.",
-          "url": "https://elpais.com/"
-        },
-        {
-          "source_name": "elDiario.es",
-          "bias": "izquierda",
-          "headline": "Los socios de investidura exigen blindar el impuesto a la banca y energéticas antes de votar el déficit",
-          "angle": "Pone el acento en las demandas redistributivas y fiscales de los grupos a la izquierda del PSOE.",
-          "url": "https://www.eldiario.es/"
-        },
-        {
-          "source_name": "El Mundo",
-          "bias": "derecha",
-          "headline": "El Gobierno prepara nuevas cesiones fiscales a sus socios para salvar otra votación límite en el Congreso",
-          "angle": "Enmarca la negociación como una muestra de debilidad parlamentaria y advierte del impacto sobre el contribuyente.",
-          "url": "https://www.elmundo.es/"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "category": "Sociedad · Vivienda",
-      "neutral_title": "Debate sobre el impacto de los topes al alquiler y el auge de los contratos de temporada",
-      "executive_summary": "Los últimos datos del mercado inmobiliario muestran una caída en la oferta de alquiler habitual simultánea a un trasvase hacia el alquiler de temporada y por habitaciones. El diagnóstico divide aguas: los medios de izquierda reclaman cerrar los resquicios legales y sancionar el fraude de ley, mientras que la derecha atribuye la escasez de oferta a la inseguridad jurídica derivada de la Ley de Vivienda.",
-      "coverage": {
-        "left": 75,
-        "center": 0,
-        "right": 25
-      },
-      "blindspot": {
-        "has_blindspot": false,
-        "ignored_by": "ninguno",
-        "explanation": "Ambos bloques cubren el problema de la vivienda, aunque diagnostican causas diametralmente opuestas."
-      },
-      "perspectives": [
-        {
-          "source_name": "El Salto",
-          "bias": "izquierda",
-          "headline": "La trampa del alquiler de temporada: así esquivan los grandes tenedores la regulación de precios",
-          "angle": "Denuncia la especulación inmobiliaria y da voz a los sindicatos de inquilinas que piden prohibir el uso fraudulento de contratos temporales.",
-          "url": "https://www.elsaltodiario.com/"
-        },
-        {
-          "source_name": "elDiario.es",
-          "bias": "izquierda",
-          "headline": "Consumo y Vivienda ultiman el registro único para frenar los pisos turísticos y de temporada ilegales",
-          "angle": "Resalta las herramientas regulatorias en marcha para controlar el cumplimiento de la ley.",
-          "url": "https://www.eldiario.es/"
-        },
-        {
-          "source_name": "El País",
-          "bias": "izquierda",
-          "headline": "El encarecimiento de la vivienda absorbe ya más del 45% del sueldo de los jóvenes en las grandes capitales",
-          "angle": "Aporta una radiografía estadística sobre la brecha generacional y las dificultades de emancipación.",
-          "url": "https://elpais.com/"
-        },
-        {
-          "source_name": "El Mundo",
-          "bias": "derecha",
-          "headline": "El control de precios hunde un 18% la oferta de pisos en alquiler y dispara la competencia por cada inmueble",
-          "angle": "Sostiene que la intervención de precios contrae el mercado y perjudica especialmente a las rentas medias y bajas.",
-          "url": "https://www.elmundo.es/"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "category": "Infraestructuras",
-      "neutral_title": "Transportes anuncia un plan de choque de mantenimiento en la red de Cercanías y Media Distancia",
-      "executive_summary": "Tras varias semanas marcadas por incidencias técnicas en nudos ferroviarios clave como Madrid y Cataluña, el Ministerio de Transportes ha presentado un calendario de inversiones urgentes en señalización y material rodante. La oposición reclama responsabilidades políticas inmediatas y auditorías independientes sobre la ejecución de los fondos europeos.",
+      "category": "Sociedad",
+      "neutral_title": "La investigación técnica del accidente de Urda y la crisis en Transportes",
+      "executive_summary": "La investigación sobre el choque ferroviario de Urda avanza entre el análisis de las cajas negras y la crisis de gestión en el ministerio de Transportes tras la dimisión de Óscar Puente y el relevo por Carlos Cuerpo. Mientras los datos del tren Iryo indican intentos fallidos de contacto previo con Atocha y velocidades de impacto de hasta 200 km/h, los expertos reclaman auditorías profundas de seguridad y formación en la red de alta velocidad.",
       "coverage": {
         "left": 35,
         "center": 30,
@@ -110,37 +18,147 @@
       "blindspot": {
         "has_blindspot": false,
         "ignored_by": "ninguno",
-        "explanation": "Tema ampliamente cubierto tanto por el impacto ciudadano diario como por el cruce de declaraciones políticas."
+        "explanation": ""
+      },
+      "perspectives": [
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "La caja negra del Iryo revela que la maquinista intentó \"reportar a Atocha en 3-4 ocasiones sin contestación\" antes del choque",
+          "angle": "Pone el foco en posibles negligencias en la torre de control y la falta de respuesta ante la advertencia de la maquinista previa al impacto.",
+          "url": "https://www.elmundo.es/economia/2026/11/07/6aef1a7ffdddff8b688b45a0.html"
+        },
+        {
+          "source_name": "Kloshletter",
+          "bias": "centro",
+          "headline": "El AVE de Urda chocó a entre 160 y 200 kilómetros por hora",
+          "angle": "Sintetiza los datos técnicos del siniestro apuntando a una concatenación de protocolos desfasados y sobrecarga de trabajo.",
+          "url": "https://kloshletter.substack.com/p/el-ave-de-urda-choco-a-entre-160"
+        },
+        {
+          "source_name": "El País",
+          "bias": "izquierda",
+          "headline": "Iñaki Barrón: “El ferrocarril tiene mucho que envidiar en seguridad al modo aéreo, sobre todo en entrenamiento”",
+          "angle": "Aborda la vertiente técnica y formativa a través de expertos del Colegio de Ingenieros para exigir mejoras estructurales de seguridad.",
+          "url": "https://elpais.com/espana/2026-11-08/inaki-barron-el-ferrocarril-tiene-mucho-que-envidiar-en-seguridad-al-modo-aereo-sobre-todo-en-entrenamiento.html"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Política",
+      "neutral_title": "Carrera al 29-N: pensiones, blindaje constitucional y el debate de las alianzas",
+      "executive_summary": "A las puertas de las elecciones del 29-N, Pedro Sánchez reactiva la campaña prometiendo blindar por Constitución las pensiones según el IPC y el aborto para movilizar el voto frente a la derecha. Por su parte, el PP de Feijóo reprocha la gestión gubernamental de las infraestructuras, marca distancias ambiguas respecto a una coalición con Vox tras pactar listas al Senado y sitúa a figuras de perfil duro en sus candidaturas.",
+      "coverage": {
+        "left": 40,
+        "center": 25,
+        "right": 35
+      },
+      "blindspot": {
+        "has_blindspot": false,
+        "ignored_by": "ninguno",
+        "explanation": ""
+      },
+      "perspectives": [
+        {
+          "source_name": "El País",
+          "bias": "izquierda",
+          "headline": "Alberto Núñez Feijóo: “Hacer una coalición de Gobierno con Vox no depende de mí”",
+          "angle": "Resalta las contradicciones de Feijóo sobre su dependencia de Abascal y su promesa de derogar leyes sociales de vivienda.",
+          "url": "https://elpais.com/espana/2026-11-08/alberto-nunez-feijoo-hacer-una-coalicion-de-gobierno-con-vox-no-depende-de-mi.html"
+        },
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "Sánchez promete reformar la Constitución para blindar las pensiones y el aborto y cita al Papa para llamar a las urnas",
+          "angle": "Subraya el tono defensivo de Sánchez usando promesas sociales y citas religiosas para capear el desgaste de gestión.",
+          "url": "https://www.elmundo.es/pais-vasco/2026/11/08/6af05b28e85eceb9318b457d.html"
+        },
+        {
+          "source_name": "Kloshletter",
+          "bias": "centro",
+          "headline": "PP y Vox pactan sus candidaturas al Senado",
+          "angle": "Resume de manera neutra el cálculo aritmético electoral de los bloques conservadores para maximizar escaños en la Cámara Alta.",
+          "url": "https://kloshletter.substack.com/p/pp-y-vox-pactan-sus-candidaturas"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Política",
+      "neutral_title": "Caso Koldo y contratos de Adif: entre nuevas pesquisas policiales y acusaciones de 'guerra sucia'",
+      "executive_summary": "La reactivación del caso Koldo con registros ordenados por la UCO en dependencias vinculadas a Adif y al entorno de Ábalos coincide con una intensa pugna informativa sobre la veracidad de los testimonios clave. Mientras las investigaciones judiciales estrechan el cerco sobre contrataciones públicas del ministerio, el bloque progresista denuncia una campaña de intoxicación y acusaciones sin pruebas promovidas por comisionistas penitenciarios para desestabilizar al Ejecutivo.",
+      "coverage": {
+        "left": 35,
+        "center": 30,
+        "right": 35
+      },
+      "blindspot": {
+        "has_blindspot": false,
+        "ignored_by": "ninguno",
+        "explanation": ""
       },
       "perspectives": [
         {
           "source_name": "Kloshletter",
           "bias": "centro",
-          "headline": "Trenes con retraso y promesas a toda velocidad: el plan de Transportes para Cercanías",
-          "angle": "Explica qué líneas se verán afectadas por las obras y cuándo llegarán los nuevos convoyes.",
-          "url": "https://kloshletter.substack.com/"
-        },
-        {
-          "source_name": "El País",
-          "bias": "izquierda",
-          "headline": "Adif duplica las brigadas nocturnas de mantenimiento para atajar las averías en la red de Cercanías",
-          "angle": "Se centra en las soluciones técnicas y en el volumen récord de licitaciones en curso tras años de desinversión.",
-          "url": "https://elpais.com/"
+          "headline": "La UCO investiga contratos de Adif en una nueva operación del caso Koldo con seis detenidos",
+          "angle": "Informa de forma objetiva sobre las actuaciones policiales bajo secreto de sumario y las nuevas detenciones ordenadas por el juez.",
+          "url": "https://kloshletter.substack.com/p/la-uco-investiga-contratos-de-adif"
         },
         {
           "source_name": "El Mundo",
           "bias": "derecha",
-          "headline": "El caos ferroviario se cronifica mientras el Ministerio culpa a la falta de trenes y a las obras en marcha",
-          "angle": "Recoge el malestar de los viajeros afectados y cuestiona la gestión de la alta velocidad frente al deterioro de Cercanías.",
-          "url": "https://www.elmundo.es/"
+          "headline": "Los escándalos que ya acechaban a Cristian Corvillo, el 'fontanero chaquetero', cuando llevaba en el coche a Sánchez",
+          "angle": "Ahonda en el perfil de intermediarios y su proximidad histórica a las estructuras de poder del PSOE para estrechar el cerco sobre el presidente.",
+          "url": "https://www.elmundo.es/cronica/2026/11/08/6aede81d21efa0981a8b458b.html"
+        },
+        {
+          "source_name": "elDiario.es",
+          "bias": "izquierda",
+          "headline": "Dos años de mentiras pagadas a precio de oro para tumbar un Gobierno",
+          "angle": "Enmarca la causa judicial en una estrategia de lawfare financiada por sectores mediáticos conservadores mediante testimonios interesados de investigados.",
+          "url": "https://www.eldiario.es/politica/anos-mentiras-pagadas-precio-oro-tumbar-gobierno_129_13645051.html"
         }
       ]
     },
     {
       "id": 4,
-      "category": "Medioambiente y Territorio",
-      "neutral_title": "Plataformas ciudadanas denuncian la proliferación de macroproyectos de biogás y minería sin consenso local",
-      "executive_summary": "Diversas coordinadoras vecinales de la España vaciada han llevado al Congreso y al Defensor del Pueblo sus quejas por la tramitación acelerada de plantas de tratamiento de purines y proyectos extractivos cerca de núcleos habitados y acuíferos vulnerables. Reclaman una planificación vinculante que no convierta las comarcas rurales en territorios de sacrificio.",
+      "category": "Internacional",
+      "neutral_title": "Atentado de extrema derecha con nueve muertos en Cracovia conmociona a Europa",
+      "executive_summary": "Un ataque armado perpetrado en la céntrica plaza del mercado de Cracovia por un hombre vinculado a ideologías de extrema derecha ha provocado al menos nueve muertos y una quincena de heridos. Las autoridades polacas y europeas investigan el suceso como atentado terrorista tras descubrirse además los cuerpos sin vida de los familiares del agresor en su domicilio, reavivando la alarma comunitaria ante la radicalización ultra violenta.",
+      "coverage": {
+        "left": 50,
+        "center": 0,
+        "right": 50
+      },
+      "blindspot": {
+        "has_blindspot": true,
+        "ignored_by": "centro",
+        "explanation": "La masacre terrorista en Polonia ha tenido eco en la prensa política de izquierda y derecha, pero ha quedado fuera de los principales boletines matinales de síntesis generalista centrados en la agenda doméstica."
+      },
+      "perspectives": [
+        {
+          "source_name": "elDiario.es",
+          "bias": "izquierda",
+          "headline": "Un ultraderechista asesina a nueve personas y deja 15 heridos en un ataque terrorista en Cracovia",
+          "angle": "Enfoca el suceso subrayando el perfil ideológico del atacante y el riesgo del auge de la violencia extremista armada en Europa.",
+          "url": "https://www.eldiario.es/internacional/cinco-muertos-docena-heridos-tiroteo-ciudad-polaca-cracovia_1_13646897.html"
+        },
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "Pánico en el corazón de Europa tras matar un hombre en Cracovia a nueve personas, entre ellas sus padres y su hermana: se investiga como \"terrorismo\"",
+          "angle": "Prioriza el impacto en la seguridad ciudadana europea y los escalofriantes detalles del parricidio previo a la masacre callejera.",
+          "url": "https://www.elmundo.es/internacional/2026/11/08/6aef98c7fdddffb6288b45b0.html"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Sociedad",
+      "neutral_title": "Sanciones de Protección de Datos a medios por revelar agentes policiales infiltrados",
+      "executive_summary": "La Agencia Española de Protección de Datos ha impuesto una multa económica y exigido la retirada de contenidos a diarios digitales por sus investigaciones periodísticas sobre agentes policiales encubiertos en colectivos sociales. Los medios afectados denuncian el uso instrumental de la normativa de privacidad como una vía de censura administrativa que vulnera el derecho constitucional a la información.",
       "coverage": {
         "left": 100,
         "center": 0,
@@ -149,47 +167,22 @@
       "blindspot": {
         "has_blindspot": true,
         "ignored_by": "derecha",
-        "explanation": "Punto ciego para la derecha: El tema es cubierto en portada por El Salto y elDiario.es desde el ángulo ecologista y vecinal, pero no aparece entre las prioridades de portada de El Mundo."
+        "explanation": "Este asunto es un notable punto ciego de la prensa conservadora y de los grandes diarios generalistas, siendo cubierto de forma exclusiva por cabeceras de izquierda alternativa que denuncian vulneraciones de la libertad de prensa y abusos de los cuerpos policiales."
       },
       "perspectives": [
         {
           "source_name": "El Salto",
           "bias": "izquierda",
-          "headline": "Rebelión en los pueblos contra la burbuja del biogás: 'Nos venden transición verde y nos traen más macrogranjas'",
-          "angle": "Reportaje sobre el terreno dando protagonismo a las plataformas vecinales y cuestionando el modelo agroindustrial.",
-          "url": "https://www.elsaltodiario.com/"
+          "headline": "La AEPD multa a VilaWeb con 7.000 euros por informar sobre policías infiltrados",
+          "angle": "Denuncia que las multas administrativas se están utilizando como una herramienta de represión para castigar el periodismo de fiscalización sobre el Ministerio del Interior.",
+          "url": "https://www.elsaltodiario.com/represion/aepd-multa-vilaweb-informar-policias-infiltrados?utm_source=feed"
         },
         {
-          "source_name": "elDiario.es",
+          "source_name": "El Salto",
           "bias": "izquierda",
-          "headline": "Científicos e hidrogeólogos alertan del riesgo de contaminación por nitratos en nuevos proyectos intensivos",
-          "angle": "Aporta datos técnicos sobre el estado de las aguas subterráneas y las advertencias de la Comisión Europea.",
-          "url": "https://www.eldiario.es/"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "category": "Empresa y Fiscalidad",
-      "neutral_title": "Patronales empresariales alertan de la pérdida de competitividad ante el aumento de costes laborales y regulatorios",
-      "executive_summary": "Un nuevo informe de coyuntura económica advierte de que las pequeñas y medianas empresas españolas afrontan una compresión de márgenes debido al incremento de las cotizaciones sociales, el absentismo y la burocracia normativa. Las organizaciones empresariales piden una moratoria regulatoria para no frenar la creación de empleo en el último trimestre.",
-      "coverage": {
-        "left": 0,
-        "center": 0,
-        "right": 100
-      },
-      "blindspot": {
-        "has_blindspot": true,
-        "ignored_by": "izquierda",
-        "explanation": "Punto ciego para la izquierda: El Mundo destaca en portada las reivindicaciones de las pymes y autónomos sobre presión fiscal y costes laborales, mientras que los medios de izquierda no lo incluyen en su agenda principal del día."
-      },
-      "perspectives": [
-        {
-          "source_name": "El Mundo",
-          "bias": "derecha",
-          "headline": "El ahogo fiscal y el alza de cotizaciones lastran a las pymes: seis de cada diez frenan sus planes de contratación",
-          "angle": "Subraya las advertencias de las asociaciones empresariales y reclama rebajas en las cotizaciones para sostener el tejido productivo.",
-          "url": "https://www.elmundo.es/"
+          "headline": "'La Directa' denuncia el uso político de la protección de datos para silenciar sus trabajos sobre infiltrados",
+          "angle": "Analiza el precedente judicial y ético que supone sancionar a medios independientes por identificar a funcionarios públicos en misiones encubiertas no regladas.",
+          "url": "https://www.elsaltodiario.com/periodismo/directa-denuncia-uso-politico-proteccion-datos-silenciar-trabajos-infiltrados?utm_source=feed"
         }
       ]
     }
@@ -197,27 +190,27 @@
   "international_reads": [
     {
       "source_name": "The New Yorker",
-      "original_title": "The Quiet Architects of the Post-AI Web",
-      "translated_title": "Los arquitectos silenciosos de la web post-inteligencia artificial",
-      "summary": "Un recorrido profundo por los pequeños estudios digitales, editores independientes y comunidades que están rediseñando espacios en internet lejos del contenido sintético masivo, apostando por la curaduría humana y los formatos lentos.",
-      "reading_Reason": "Ensayo tecnológico y cultural",
-      "url": "https://www.newyorker.com/news"
+      "original_title": "Did the World Just Gain Hundreds of Millions of Alzheimer’s Patients?",
+      "translated_title": "¿Acaba el mundo de sumar cientos de millones de pacientes con alzhéimer?",
+      "summary": "Una nueva definición clínica de la enfermedad incorpora a personas sin síntomas evidentes mediante biomarcadores. El reportaje profundiza en la feroz controversia médica sobre si este nuevo diagnóstico anticipado responde a un avance real o al interés comercial por comercializar nuevos fármacos de eficacia cuestionada.",
+      "reading_Reason": "Dilemas bioéticos y salud global",
+      "url": "https://www.newyorker.com/magazine/2026/11/09/did-the-world-just-gain-hundreds-of-millions-of-alzheimers-patients"
     },
     {
       "source_name": "The New Yorker",
-      "original_title": "Europe’s High-Speed Rail Dream Hits a Border Wall",
-      "translated_title": "El sueño del tren de alta velocidad europeo choca contra un muro fronterizo",
-      "summary": "Por qué cruzar tres países europeos en tren nocturno sigue siendo una odisea burocrática de sistemas de señalización incompatibles y compañías nacionales recelosas de compartir vías, pese a las promesas climáticas de Bruselas.",
-      "reading_Reason": "Crónica europea",
-      "url": "https://www.newyorker.com/news"
+      "original_title": "The Year Math Changed Forever",
+      "translated_title": "El año en que las matemáticas cambiaron para siempre",
+      "summary": "La inteligencia artificial está resolviendo enigmas matemáticos teóricos que permanecían encallados desde hacía décadas. A través de la mirada del influyente matemático Terence Tao, se examina cómo la disciplina afronta una transformación estructural irreversible en sus métodos de demostración.",
+      "reading_Reason": "Fronteras de la ciencia y la IA",
+      "url": "https://www.newyorker.com/magazine/2026/11/09/the-year-math-changed-forever"
     },
     {
       "source_name": "The New Yorker",
-      "original_title": "The Art of the Slow Profile in an Age of Instant Takes",
-      "translated_title": "El arte del perfil pausado en la era de la opinión instantánea",
-      "summary": "Una reflexión sobre el oficio periodístico de acompañar a un personaje durante semanas para capturar sus contradicciones, frente a la economía de la atención inmediata que domina las redes sociales.",
-      "reading_Reason": "Periodismo narrativo",
-      "url": "https://www.newyorker.com/news"
+      "original_title": "An N.B.A. Player Got Hooked on Sports Betting. Soon, He Became the Bet",
+      "translated_title": "Un jugador de la NBA se enganchó a las apuestas deportivas y terminó convirtiéndose en la propia apuesta",
+      "summary": "La historia del descenso a los infiernos de Jontay Porter ilustra los peligros de la normalización del juego en línea en el deporte profesional estadounidense. Una crónica vibrante sobre cómo las deudas con prestamistas llevaron a un atleta de élite a manipular sus propios partidos.",
+      "reading_Reason": "Crónica de investigación y deporte",
+      "url": "https://www.newyorker.com/magazine/2026/11/16/the-nba-player-who-got-hooked-on-sports-betting"
     }
   ]
 }
