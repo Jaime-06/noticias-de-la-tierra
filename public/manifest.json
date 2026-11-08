@@ -1,0 +1,24 @@
+{
+  "name": "GroundNews ES · Noticias debajo de la tierra",
+  "short_name": "GroundNews ES",
+  "description": "Agregador diario de noticias con análisis de cobertura ideológica, puntos ciegos y síntesis editorial.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f4ef",
+  "theme_color": "#f7f4ef",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

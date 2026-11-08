@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="GroundNews ES" />
+  <meta name="theme-color" content="#f7f4ef" />
+  <title>GroundNews ES · Noticias debajo de la tierra</title>
+  <meta name="description" content="Agregador diario de noticias con análisis de cobertura ideológica, puntos ciegos y síntesis editorial estilo Ground News + Kloshletter." />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Barra superior de utilidad -->
+    <div class="top-utility-bar">
+      <div class="utility-left">
+        <span class="live-dot"></span>
+        <span id="edition-date">Cargando edición...</span>
+      </div>
+      <div class="utility-center">
+        <span>Edición diaria · España &amp; Internacional</span>
+      </div>
+      <div class="utility-right">
+        <button id="theme-toggle" class="theme-btn" type="button" aria-label="Cambiar modo de color">
+          <span class="theme-icon" id="theme-icon">◐</span>
+          <span id="theme-label">Modo oscuro</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cabecera Editorial (Masthead) -->
+    <header class="masthead">
+      <div class="masthead-kicker">SÍNTESIS EDITORIAL &amp; RADAR DE COBERTURA MEDIÁTICA</div>
+      <h1 class="masthead-title">Noticias debajo de la tierra</h1>
+      <p id="edition-subtitle" class="masthead-subtitle">
+        Cinco historias clave del día miradas desde todos los ángulos, sin ruido ni cámaras de eco.
+      </p>
+
+      <!-- Leyenda del espectro mediático -->
+      <div class="sources-legend" aria-label="Fuentes analizadas hoy">
+        <div class="legend-item">
+          <span class="badge-dot dot-left"></span>
+          <span><strong>Izquierda:</strong> El País, elDiario.es, El Salto</span>
+        </div>
+        <div class="legend-item">
+          <span class="badge-dot dot-center"></span>
+          <span><strong>Síntesis / Centro:</strong> Kloshletter</span>
+        </div>
+        <div class="legend-item">
+          <span class="badge-dot dot-right"></span>
+          <span><strong>Derecha:</strong> El Mundo</span>
+        </div>
+        <div class="legend-item">
+          <span class="badge-dot dot-intl"></span>
+          <span><strong>Lectura larga:</strong> The New Yorker</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Introducción estilo Kloshletter -->
+    <section id="briefing-section" class="briefing-card" hidden>
+      <div class="briefing-header">
+        <span class="briefing-tag">☕ EL PULSO DE LA MAÑANA</span>
+        <span id="generated-time" class="briefing-time"></span>
+      </div>
+      <p id="daily-briefing-text" class="briefing-text"></p>
+    </section>
+
+    <!-- Filtros rápidos -->
+    <nav class="filter-bar" aria-label="Filtrar temas">
+      <div class="filter-group">
+        <button class="filter-chip active" data-filter="all">Todos los temas (5)</button>
+        <button class="filter-chip" data-filter="blindspot">👁️ Solo Puntos Ciegos (Blindspots)</button>
+      </div>
+      <div class="filter-hint">
+        Haz clic en cada medio para leer el artículo original
+      </div>
+    </nav>
+
+    <!-- Contenedor principal de los 5 grandes temas -->
+    <main id="topics-container" class="topics-list" aria-live="polite">
+      <div class="loading-state">Cargando el análisis del día...</div>
+    </main>
+
+    <!-- Sección Internacional: The New Yorker -->
+    <section class="international-section" aria-labelledby="intl-heading">
+      <div class="section-divider">
+        <span class="section-kicker">MIRADA INTERNACIONAL · LECTURAS RECOMENDADAS</span>
+        <h2 id="intl-heading" class="section-title">The New Yorker</h2>
+        <p class="section-desc">Crónicas, perfiles y ensayos seleccionados del feed de noticias de <em>The New Yorker</em> para leer con calma.</p>
+      </div>
+      <div id="international-container" class="intl-grid"></div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <strong>Noticias debajo de la tierra</strong> · Generado estáticamente una vez al día con Python + <code>feedparser</code> + <code>gemini-2.5-flash</code>.
+        </div>
+        <div class="footer-links">
+          <span>Inspirado en <em>Ground News</em> y <em>Kloshletter</em></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

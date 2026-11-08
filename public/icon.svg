@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#f7f4ef"/>
+  <rect x="32" y="32" width="448" height="448" rx="88" fill="none" stroke="#141413" stroke-width="8"/>
+  <!-- Cabecera estilo periódico -->
+  <line x1="88" y1="128" x2="424" y2="128" stroke="#141413" stroke-width="6"/>
+  <line x1="88" y1="142" x2="424" y2="142" stroke="#141413" stroke-width="2"/>
+  <text x="256" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="185" font-weight="bold" fill="#141413" text-anchor="middle">N</text>
+  <!-- Barra tricolor de cobertura (Izquierda / Centro / Derecha) -->
+  <rect x="88" y="368" width="112" height="28" rx="6" fill="#2b59c3"/>
+  <rect x="208" y="368" width="96" height="28" rx="6" fill="#6e6a63"/>
+  <rect x="312" y="368" width="112" height="28" rx="6" fill="#c83e3b"/>
+</svg>

@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-11-08T08:00:00+01:00",
+  "date_formatted": "Edición de muestra · 8 de noviembre de 2026",
+  "sources_count": 6,
+  "edition_title": "Presupuestos en el aire, tensión en el mercado de la vivienda y auditoría ferroviaria",
+  "daily_briefing": "¡Buenos días! Hoy los kioscos digitales amanecen divididos entre la aritmética parlamentaria para sacar adelante la senda de déficit y el debate sobre la intervención del mercado del alquiler. Mientras la prensa progresista pone el foco en las medidas sociales y la transición ecológica, la cabecera conservadora subraya la presión fiscal y las concesiones a los socios parlamentarios. Café en mano, vemos cómo lo cuenta cada uno.",
+  "top_topics": [
+    {
+      "id": 1,
+      "category": "Política y Economía",
+      "neutral_title": "El Gobierno negocia in extremis la senda de estabilidad presupuestaria con sus socios parlamentarios",
+      "executive_summary": "El Ministerio de Hacienda encara una semana decisiva para aprobar el techo de gasto y los objetivos de déficit que servirán de base a los próximos Presupuestos Generales. Mientras el Ejecutivo busca cerrar un acuerdo fiscal equilibrado que satisfaga tanto a Bruselas como a sus aliados parlamentarios, los distintos bloques mediáticos difieren sobre si la prioridad debe ser el alivio tributario o la ampliación del escudo social.",
+      "coverage": {
+        "left": 50,
+        "center": 25,
+        "right": 25
+      },
+      "blindspot": {
+        "has_blindspot": false,
+        "ignored_by": "ninguno",
+        "explanation": "Cobertura transversal en todos los espectros ideológicos con enfoques contrapuestos sobre política fiscal."
+      },
+      "perspectives": [
+        {
+          "source_name": "Kloshletter",
+          "bias": "centro",
+          "headline": "Cuentas pendientes: la calculadora del Congreso vuelve a echar humo",
+          "angle": "Resume de forma pragmática los votos que necesita el Ejecutivo y el calendario que exige la Comisión Europea.",
+          "url": "https://kloshletter.substack.com/"
+        },
+        {
+          "source_name": "El País",
+          "bias": "izquierda",
+          "headline": "Hacienda ofrece margen inversor a las comunidades para encauzar la senda de estabilidad",
+          "angle": "Destaca la voluntad negociadora del Gobierno y el margen de gasto social que permitiría el nuevo techo presupuestario.",
+          "url": "https://elpais.com/"
+        },
+        {
+          "source_name": "elDiario.es",
+          "bias": "izquierda",
+          "headline": "Los socios de investidura exigen blindar el impuesto a la banca y energéticas antes de votar el déficit",
+          "angle": "Pone el acento en las demandas redistributivas y fiscales de los grupos a la izquierda del PSOE.",
+          "url": "https://www.eldiario.es/"
+        },
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "El Gobierno prepara nuevas cesiones fiscales a sus socios para salvar otra votación límite en el Congreso",
+          "angle": "Enmarca la negociación como una muestra de debilidad parlamentaria y advierte del impacto sobre el contribuyente.",
+          "url": "https://www.elmundo.es/"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Sociedad · Vivienda",
+      "neutral_title": "Debate sobre el impacto de los topes al alquiler y el auge de los contratos de temporada",
+      "executive_summary": "Los últimos datos del mercado inmobiliario muestran una caída en la oferta de alquiler habitual simultánea a un trasvase hacia el alquiler de temporada y por habitaciones. El diagnóstico divide aguas: los medios de izquierda reclaman cerrar los resquicios legales y sancionar el fraude de ley, mientras que la derecha atribuye la escasez de oferta a la inseguridad jurídica derivada de la Ley de Vivienda.",
+      "coverage": {
+        "left": 75,
+        "center": 0,
+        "right": 25
+      },
+      "blindspot": {
+        "has_blindspot": false,
+        "ignored_by": "ninguno",
+        "explanation": "Ambos bloques cubren el problema de la vivienda, aunque diagnostican causas diametralmente opuestas."
+      },
+      "perspectives": [
+        {
+          "source_name": "El Salto",
+          "bias": "izquierda",
+          "headline": "La trampa del alquiler de temporada: así esquivan los grandes tenedores la regulación de precios",
+          "angle": "Denuncia la especulación inmobiliaria y da voz a los sindicatos de inquilinas que piden prohibir el uso fraudulento de contratos temporales.",
+          "url": "https://www.elsaltodiario.com/"
+        },
+        {
+          "source_name": "elDiario.es",
+          "bias": "izquierda",
+          "headline": "Consumo y Vivienda ultiman el registro único para frenar los pisos turísticos y de temporada ilegales",
+          "angle": "Resalta las herramientas regulatorias en marcha para controlar el cumplimiento de la ley.",
+          "url": "https://www.eldiario.es/"
+        },
+        {
+          "source_name": "El País",
+          "bias": "izquierda",
+          "headline": "El encarecimiento de la vivienda absorbe ya más del 45% del sueldo de los jóvenes en las grandes capitales",
+          "angle": "Aporta una radiografía estadística sobre la brecha generacional y las dificultades de emancipación.",
+          "url": "https://elpais.com/"
+        },
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "El control de precios hunde un 18% la oferta de pisos en alquiler y dispara la competencia por cada inmueble",
+          "angle": "Sostiene que la intervención de precios contrae el mercado y perjudica especialmente a las rentas medias y bajas.",
+          "url": "https://www.elmundo.es/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "category": "Infraestructuras",
+      "neutral_title": "Transportes anuncia un plan de choque de mantenimiento en la red de Cercanías y Media Distancia",
+      "executive_summary": "Tras varias semanas marcadas por incidencias técnicas en nudos ferroviarios clave como Madrid y Cataluña, el Ministerio de Transportes ha presentado un calendario de inversiones urgentes en señalización y material rodante. La oposición reclama responsabilidades políticas inmediatas y auditorías independientes sobre la ejecución de los fondos europeos.",
+      "coverage": {
+        "left": 35,
+        "center": 30,
+        "right": 35
+      },
+      "blindspot": {
+        "has_blindspot": false,
+        "ignored_by": "ninguno",
+        "explanation": "Tema ampliamente cubierto tanto por el impacto ciudadano diario como por el cruce de declaraciones políticas."
+      },
+      "perspectives": [
+        {
+          "source_name": "Kloshletter",
+          "bias": "centro",
+          "headline": "Trenes con retraso y promesas a toda velocidad: el plan de Transportes para Cercanías",
+          "angle": "Explica qué líneas se verán afectadas por las obras y cuándo llegarán los nuevos convoyes.",
+          "url": "https://kloshletter.substack.com/"
+        },
+        {
+          "source_name": "El País",
+          "bias": "izquierda",
+          "headline": "Adif duplica las brigadas nocturnas de mantenimiento para atajar las averías en la red de Cercanías",
+          "angle": "Se centra en las soluciones técnicas y en el volumen récord de licitaciones en curso tras años de desinversión.",
+          "url": "https://elpais.com/"
+        },
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "El caos ferroviario se cronifica mientras el Ministerio culpa a la falta de trenes y a las obras en marcha",
+          "angle": "Recoge el malestar de los viajeros afectados y cuestiona la gestión de la alta velocidad frente al deterioro de Cercanías.",
+          "url": "https://www.elmundo.es/"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "category": "Medioambiente y Territorio",
+      "neutral_title": "Plataformas ciudadanas denuncian la proliferación de macroproyectos de biogás y minería sin consenso local",
+      "executive_summary": "Diversas coordinadoras vecinales de la España vaciada han llevado al Congreso y al Defensor del Pueblo sus quejas por la tramitación acelerada de plantas de tratamiento de purines y proyectos extractivos cerca de núcleos habitados y acuíferos vulnerables. Reclaman una planificación vinculante que no convierta las comarcas rurales en territorios de sacrificio.",
+      "coverage": {
+        "left": 100,
+        "center": 0,
+        "right": 0
+      },
+      "blindspot": {
+        "has_blindspot": true,
+        "ignored_by": "derecha",
+        "explanation": "Punto ciego para la derecha: El tema es cubierto en portada por El Salto y elDiario.es desde el ángulo ecologista y vecinal, pero no aparece entre las prioridades de portada de El Mundo."
+      },
+      "perspectives": [
+        {
+          "source_name": "El Salto",
+          "bias": "izquierda",
+          "headline": "Rebelión en los pueblos contra la burbuja del biogás: 'Nos venden transición verde y nos traen más macrogranjas'",
+          "angle": "Reportaje sobre el terreno dando protagonismo a las plataformas vecinales y cuestionando el modelo agroindustrial.",
+          "url": "https://www.elsaltodiario.com/"
+        },
+        {
+          "source_name": "elDiario.es",
+          "bias": "izquierda",
+          "headline": "Científicos e hidrogeólogos alertan del riesgo de contaminación por nitratos en nuevos proyectos intensivos",
+          "angle": "Aporta datos técnicos sobre el estado de las aguas subterráneas y las advertencias de la Comisión Europea.",
+          "url": "https://www.eldiario.es/"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "category": "Empresa y Fiscalidad",
+      "neutral_title": "Patronales empresariales alertan de la pérdida de competitividad ante el aumento de costes laborales y regulatorios",
+      "executive_summary": "Un nuevo informe de coyuntura económica advierte de que las pequeñas y medianas empresas españolas afrontan una compresión de márgenes debido al incremento de las cotizaciones sociales, el absentismo y la burocracia normativa. Las organizaciones empresariales piden una moratoria regulatoria para no frenar la creación de empleo en el último trimestre.",
+      "coverage": {
+        "left": 0,
+        "center": 0,
+        "right": 100
+      },
+      "blindspot": {
+        "has_blindspot": true,
+        "ignored_by": "izquierda",
+        "explanation": "Punto ciego para la izquierda: El Mundo destaca en portada las reivindicaciones de las pymes y autónomos sobre presión fiscal y costes laborales, mientras que los medios de izquierda no lo incluyen en su agenda principal del día."
+      },
+      "perspectives": [
+        {
+          "source_name": "El Mundo",
+          "bias": "derecha",
+          "headline": "El ahogo fiscal y el alza de cotizaciones lastran a las pymes: seis de cada diez frenan sus planes de contratación",
+          "angle": "Subraya las advertencias de las asociaciones empresariales y reclama rebajas en las cotizaciones para sostener el tejido productivo.",
+          "url": "https://www.elmundo.es/"
+        }
+      ]
+    }
+  ],
+  "international_reads": [
+    {
+      "source_name": "The New Yorker",
+      "original_title": "The Quiet Architects of the Post-AI Web",
+      "translated_title": "Los arquitectos silenciosos de la web post-inteligencia artificial",
+      "summary": "Un recorrido profundo por los pequeños estudios digitales, editores independientes y comunidades que están rediseñando espacios en internet lejos del contenido sintético masivo, apostando por la curaduría humana y los formatos lentos.",
+      "reading_Reason": "Ensayo tecnológico y cultural",
+      "url": "https://www.newyorker.com/news"
+    },
+    {
+      "source_name": "The New Yorker",
+      "original_title": "Europe’s High-Speed Rail Dream Hits a Border Wall",
+      "translated_title": "El sueño del tren de alta velocidad europeo choca contra un muro fronterizo",
+      "summary": "Por qué cruzar tres países europeos en tren nocturno sigue siendo una odisea burocrática de sistemas de señalización incompatibles y compañías nacionales recelosas de compartir vías, pese a las promesas climáticas de Bruselas.",
+      "reading_Reason": "Crónica europea",
+      "url": "https://www.newyorker.com/news"
+    },
+    {
+      "source_name": "The New Yorker",
+      "original_title": "The Art of the Slow Profile in an Age of Instant Takes",
+      "translated_title": "El arte del perfil pausado en la era de la opinión instantánea",
+      "summary": "Una reflexión sobre el oficio periodístico de acompañar a un personaje durante semanas para capturar sus contradicciones, frente a la economía de la atención inmediata que domina las redes sociales.",
+      "reading_Reason": "Periodismo narrativo",
+      "url": "https://www.newyorker.com/news"
+    }
+  ]
+}
