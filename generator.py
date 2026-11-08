@@ -126,35 +126,89 @@ def clean_html(raw_html: str) -> str:
     return clean[:450] + ("..." if len(clean) > 450 else "")
 
 
+def fetch_kloshletter_fallback(headers: dict) -> list:
+    """Fallback para Kloshletter usando rss2json y la API JSON de Substack cuando bloquean las IPs de GitHub Actions."""
+    items = []
+
+    # Intento 1: API pública de rss2json
+    rss2json_url = "https://api.rss2json.com/v1/api.json?rss_url=https://kloshletter.substack.com/feed"
+    try:
+        print("   🔄 Probando fallback rss2json para Kloshletter...")
+        resp = requests.get(rss2json_url, headers=headers, timeout=15)
+        resp.raise_for_status()
+        data = resp.json()
+        if data.get("status") == "ok" and data.get("items"):
+            for entry in data["items"][:MAX_ITEMS_PER_FEED]:
+                title = (entry.get("title") or "").strip()
+                summary = clean_html(entry.get("description") or entry.get("content") or "")
+                link = (entry.get("link") or "").strip()
+                if title and link:
+                    items.append({"title": title, "description": summary, "url": link})
+            if items:
+                return items
+    except Exception as e:
+        print(f"   ⚠️ Fallback rss2json falló: {e}")
+
+    # Intento 2: API JSON de Substack
+    substack_api_url = "https://kloshletter.substack.com/api/v1/posts?limit=5"
+    try:
+        print("   🔄 Probando fallback API Substack para Kloshletter...")
+        resp = requests.get(substack_api_url, headers=headers, timeout=15)
+        resp.raise_for_status()
+        posts = resp.json()
+        if isinstance(posts, list):
+            for post in posts[:MAX_ITEMS_PER_FEED]:
+                title = (post.get("title") or "").strip()
+                summary = clean_html(post.get("subtitle") or post.get("description") or post.get("truncated_body_text") or "")
+                link = (post.get("canonical_url") or "").strip()
+                if not link and post.get("slug"):
+                    link = f"https://kloshletter.substack.com/p/{post['slug']}"
+                if title and link:
+                    items.append({"title": title, "description": summary, "url": link})
+    except Exception as e:
+        print(f"   ⚠️ Fallback API Substack falló: {e}")
+
+    return items
+
+
 def fetch_rss_items() -> dict:
     """Descarga y parsea los primeros 10 titulares y descripciones de cada medio."""
     collected = {}
     headers = {
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,application/json,*/*;q=0.8",
+        "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
     }
 
     for source_name, meta in FEEDS.items():
         url = meta["url"]
         print(f"📡 Leyendo RSS de {source_name} ({url})...")
+        feed = None
         try:
             resp = requests.get(url, headers=headers, timeout=15)
             resp.raise_for_status()
             feed = feedparser.parse(resp.content)
         except Exception as e:
-            print(f"⚠️ Aviso: fallo con requests en {source_name} ({e}), reintentando con feedparser directo...")
-            feed = feedparser.parse(url)
+            print(f"⚠️ Aviso: fallo con requests en {source_name} ({e}), reintentando...")
+            feed = feedparser.parse(url, request_headers=headers)
 
         items = []
-        for entry in feed.entries[:MAX_ITEMS_PER_FEED]:
-            title = entry.get("title", "").strip()
-            summary = clean_html(entry.get("summary", entry.get("description", "")))
-            link = entry.get("link", "").strip()
-            if title and link:
-                items.append({
-                    "title": title,
-                    "description": summary,
-                    "url": link,
-                })
+        if feed and getattr(feed, "entries", None):
+            for entry in feed.entries[:MAX_ITEMS_PER_FEED]:
+                title = entry.get("title", "").strip()
+                summary = clean_html(entry.get("summary", entry.get("description", "")))
+                link = entry.get("link", "").strip()
+                if title and link:
+                    items.append({
+                        "title": title,
+                        "description": summary,
+                        "url": link,
+                    })
+
+        if not items and source_name == "Kloshletter":
+            items = fetch_kloshletter_fallback(headers)
 
         collected[source_name] = {
             "bias": meta["bias"],
@@ -167,7 +221,7 @@ def fetch_rss_items() -> dict:
 
 
 def analyze_with_gemini(rss_data: dict) -> dict:
-    """Envía los titulares a Gemini 2.5 Flash y devuelve el JSON estructurado."""
+    """Envía los titulares a Gemini 3.8 Flash y devuelve el JSON estructurado."""
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         print("❌ Error: La variable de entorno GEMINI_API_KEY no está definida.", file=sys.stderr)
@@ -205,9 +259,9 @@ Datos RSS de entrada (JSON):
 {json.dumps(rss_data, ensure_ascii=False, indent=2)}
 """
 
-    print("🧠 Analizando noticias y sesgos con Gemini (gemini-2.5-flash)...")
+    print("🧠 Analizando noticias y sesgos con Gemini (gemini-3.8-flash)...")
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         contents=prompt,
         config=types.GenerateContentConfig(
             response_mime_type="application/json",
